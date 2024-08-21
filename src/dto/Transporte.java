@@ -8,10 +8,10 @@ public class Transporte {
 
     // Constructor
     public Transporte(String idTransporte, String vehiculo, String modalidad, float precio) {
-        this.idTransporte = idTransporte;
-        this.vehiculo = vehiculo;
-        this.modalidad = modalidad;
-        this.precio = precio;
+        setIdTransporte(idTransporte);
+        setVehiculo(vehiculo);
+        setModalidad(modalidad);
+        setPrecio(precio);
     }
 
     // Getters y Setters

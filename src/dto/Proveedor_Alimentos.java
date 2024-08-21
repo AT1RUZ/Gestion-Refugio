@@ -1,32 +1,32 @@
 package dto;
 
-public class Proveedor_Alimentos {
-    private String idProveedorAlimentos;
+public class Proveedor_Alimentos extends Contratado {
+    private String idContratado;
     private String nombreProveedor;
     private String direccion;
     private String email;
-    private String codigoContrato;
     private String idAlimento;
-    private String idProvincia;
 
     // Constructor
-    public Proveedor_Alimentos(String idProveedorAlimentos, String nombreProveedor, String direccion, String email, String codigoContrato, String idAlimento, String idProvincia) {
-        this.idProveedorAlimentos = idProveedorAlimentos;
-        this.nombreProveedor = nombreProveedor;
-        this.direccion = direccion;
-        this.email = email;
-        this.codigoContrato = codigoContrato;
-        this.idAlimento = idAlimento;
-        this.idProvincia = idProvincia;
+    public Proveedor_Alimentos(String idContratado, String codigoContrato, String idProvincia, String nombreProveedor, String direccion, String email, String idAlimento) {
+        super(idContratado, codigoContrato, idProvincia);
+        setIdContratado(idContratado);
+        setNombreProveedor(nombreProveedor);
+        setDireccion(direccion);
+        setEmail(email);
+        setIdAlimento(idAlimento);
     }
 
-    // Getters y Setters
-    public String getIdProveedorAlimentos() {
-        return idProveedorAlimentos;
+    // Getters y Setters con validaciones
+    public String getIdContratado() {
+        return idContratado;
     }
 
-    public void setIdProveedorAlimentos(String idProveedorAlimentos) {
-        this.idProveedorAlimentos = idProveedorAlimentos;
+    public void setIdContratado(String idContratado) {
+        if (idContratado == null || idContratado.trim().isEmpty()) {
+            throw new IllegalArgumentException("El ID del contratado no puede ser nulo o vacío.");
+        }
+        this.idContratado = idContratado;
     }
 
     public String getNombreProveedor() {
@@ -34,6 +34,9 @@ public class Proveedor_Alimentos {
     }
 
     public void setNombreProveedor(String nombreProveedor) {
+        if (nombreProveedor == null || nombreProveedor.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre del proveedor no puede ser nulo o vacío.");
+        }
         this.nombreProveedor = nombreProveedor;
     }
 
@@ -42,6 +45,9 @@ public class Proveedor_Alimentos {
     }
 
     public void setDireccion(String direccion) {
+        if (direccion == null || direccion.trim().isEmpty()) {
+            throw new IllegalArgumentException("La dirección no puede ser nula o vacía.");
+        }
         this.direccion = direccion;
     }
 
@@ -50,19 +56,10 @@ public class Proveedor_Alimentos {
     }
 
     public void setEmail(String email) {
-        if (email.contains("@")) {
-            this.email = email;
-        } else {
-            throw new IllegalArgumentException("Email no válido.");
+        if (email == null || !email.matches("^(.+)@(.+)$")) {
+            throw new IllegalArgumentException("El email no es válido.");
         }
-    }
-
-    public String getCodigoContrato() {
-        return codigoContrato;
-    }
-
-    public void setCodigoContrato(String codigoContrato) {
-        this.codigoContrato = codigoContrato;
+        this.email = email;
     }
 
     public String getIdAlimento() {
@@ -70,14 +67,9 @@ public class Proveedor_Alimentos {
     }
 
     public void setIdAlimento(String idAlimento) {
+        if (idAlimento == null || idAlimento.trim().isEmpty()) {
+            throw new IllegalArgumentException("El ID del alimento no puede ser nulo o vacío.");
+        }
         this.idAlimento = idAlimento;
-    }
-
-    public String getIdProvincia() {
-        return idProvincia;
-    }
-
-    public void setIdProvincia(String idProvincia) {
-        this.idProvincia = idProvincia;
     }
 }
