@@ -1,7 +1,7 @@
 package dto;
 
-public class Veterinario {
-    private String idVeterinario;
+public class Veterinario extends Contratado {
+    private String idContratado;
     private String nombreVeterinario;
     private String clinicaVeterinario;
     private String direccionVeterinario;
@@ -11,32 +11,32 @@ public class Veterinario {
     private String emailVeterinario;
     private String distanciaCiudadVeterinario;
     private String modalidadServicioVeterinario;
-    private String codigoContrato;
-    private String idProvincia;
 
     // Constructor
-    public Veterinario(String idVeterinario, String nombreVeterinario, String clinicaVeterinario, String direccionVeterinario, String especialidadVeterinario, String telefonoVeterinario, String faxVeterinario, String emailVeterinario, String distanciaCiudadVeterinario, String modalidadServicioVeterinario, String codigoContrato, String idProvincia) {
-        this.idVeterinario = idVeterinario;
-        this.nombreVeterinario = nombreVeterinario;
-        this.clinicaVeterinario = clinicaVeterinario;
-        this.direccionVeterinario = direccionVeterinario;
-        this.especialidadVeterinario = especialidadVeterinario;
-        this.telefonoVeterinario = telefonoVeterinario;
-        this.faxVeterinario = faxVeterinario;
-        this.emailVeterinario = emailVeterinario;
-        this.distanciaCiudadVeterinario = distanciaCiudadVeterinario;
-        this.modalidadServicioVeterinario = modalidadServicioVeterinario;
-        this.codigoContrato = codigoContrato;
-        this.idProvincia = idProvincia;
+    public Veterinario(String idContratado, String codigoContrato, String idProvincia, String nombreVeterinario, String clinicaVeterinario, String direccionVeterinario, String especialidadVeterinario, String telefonoVeterinario,String faxVeterinario, String emailVeterinario, String distanciaCiudadVeterinario,String modalidadServicioVeterinario) {
+        super(idContratado, codigoContrato, idProvincia);
+        setIdContratado(idContratado);
+        setNombreVeterinario(nombreVeterinario);
+        setClinicaVeterinario(clinicaVeterinario);
+        setDireccionVeterinario(direccionVeterinario);
+        setEspecialidadVeterinario(especialidadVeterinario);
+        setTelefonoVeterinario(telefonoVeterinario);
+        setFaxVeterinario(faxVeterinario);
+        setEmailVeterinario(emailVeterinario);
+        setDistanciaCiudadVeterinario(distanciaCiudadVeterinario);
+        setModalidadServicioVeterinario(modalidadServicioVeterinario);
     }
 
-    // Getters y Setters
-    public String getIdVeterinario() {
-        return idVeterinario;
+    // Getters and Setters with validations
+    public String getIdContratado() {
+        return idContratado;
     }
 
-    public void setIdVeterinario(String idVeterinario) {
-        this.idVeterinario = idVeterinario;
+    public void setIdContratado(String idContratado) {
+        if (idContratado == null || idContratado.isEmpty()) {
+            throw new IllegalArgumentException("El ID de contratado no puede ser nulo o vacío.");
+        }
+        this.idContratado = idContratado;
     }
 
     public String getNombreVeterinario() {
@@ -44,6 +44,9 @@ public class Veterinario {
     }
 
     public void setNombreVeterinario(String nombreVeterinario) {
+        if (nombreVeterinario == null || nombreVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("El nombre del veterinario no puede ser nulo o vacío.");
+        }
         this.nombreVeterinario = nombreVeterinario;
     }
 
@@ -52,6 +55,9 @@ public class Veterinario {
     }
 
     public void setClinicaVeterinario(String clinicaVeterinario) {
+        if (clinicaVeterinario == null || clinicaVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("La clínica del veterinario no puede ser nula o vacía.");
+        }
         this.clinicaVeterinario = clinicaVeterinario;
     }
 
@@ -60,6 +66,9 @@ public class Veterinario {
     }
 
     public void setDireccionVeterinario(String direccionVeterinario) {
+        if (direccionVeterinario == null || direccionVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("La dirección del veterinario no puede ser nula o vacía.");
+        }
         this.direccionVeterinario = direccionVeterinario;
     }
 
@@ -68,6 +77,9 @@ public class Veterinario {
     }
 
     public void setEspecialidadVeterinario(String especialidadVeterinario) {
+        if (especialidadVeterinario == null || especialidadVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("La especialidad del veterinario no puede ser nula o vacía.");
+        }
         this.especialidadVeterinario = especialidadVeterinario;
     }
 
@@ -76,6 +88,9 @@ public class Veterinario {
     }
 
     public void setTelefonoVeterinario(String telefonoVeterinario) {
+        if (telefonoVeterinario == null || telefonoVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("El teléfono del veterinario no puede ser nulo o vacío.");
+        }
         this.telefonoVeterinario = telefonoVeterinario;
     }
 
@@ -84,6 +99,9 @@ public class Veterinario {
     }
 
     public void setFaxVeterinario(String faxVeterinario) {
+        if (faxVeterinario == null || faxVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("El fax del veterinario no puede ser nulo o vacío.");
+        }
         this.faxVeterinario = faxVeterinario;
     }
 
@@ -92,11 +110,13 @@ public class Veterinario {
     }
 
     public void setEmailVeterinario(String emailVeterinario) {
-        if (emailVeterinario.contains("@")) {
-            this.emailVeterinario = emailVeterinario;
-        } else {
-            throw new IllegalArgumentException("Email no válido.");
+        if (emailVeterinario == null || emailVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("El email del veterinario no puede ser nulo o vacío.");
         }
+        if (!emailVeterinario.contains("@")) {
+            throw new IllegalArgumentException("El email del veterinario debe contener '@'.");
+        }
+        this.emailVeterinario = emailVeterinario;
     }
 
     public String getDistanciaCiudadVeterinario() {
@@ -104,6 +124,9 @@ public class Veterinario {
     }
 
     public void setDistanciaCiudadVeterinario(String distanciaCiudadVeterinario) {
+        if (distanciaCiudadVeterinario == null || distanciaCiudadVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("La distancia a la ciudad del veterinario no puede ser nula o vacía.");
+        }
         this.distanciaCiudadVeterinario = distanciaCiudadVeterinario;
     }
 
@@ -112,22 +135,9 @@ public class Veterinario {
     }
 
     public void setModalidadServicioVeterinario(String modalidadServicioVeterinario) {
+        if (modalidadServicioVeterinario == null || modalidadServicioVeterinario.isEmpty()) {
+            throw new IllegalArgumentException("La modalidad de servicio del veterinario no puede ser nula o vacía.");
+        }
         this.modalidadServicioVeterinario = modalidadServicioVeterinario;
-    }
-
-    public String getCodigoContrato() {
-        return codigoContrato;
-    }
-
-    public void setCodigoContrato(String codigoContrato) {
-        this.codigoContrato = codigoContrato;
-    }
-
-    public String getIdProvincia() {
-        return idProvincia;
-    }
-
-    public void setIdProvincia(String idProvincia) {
-        this.idProvincia = idProvincia;
     }
 }
