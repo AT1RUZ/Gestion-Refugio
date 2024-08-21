@@ -1,5 +1,6 @@
 package dto;
-import java.time.LocalDate;
+import java.sql.Date;
+
 
 public class Contrato {
     private String codigoContrato;
@@ -9,32 +10,36 @@ public class Contrato {
     private String telefono;
     private String email;
     private String nombreResponsable;
-    private LocalDate fechaInicio;
-    private LocalDate fechaTerminacion;
-    private LocalDate fechaConciliacion;
+    private Date fechaInicio;
+    private Date fechaTerminacion;
+    private Date fechaConciliacion;
     private String descripcion;
 
-    // Constructor
-    public Contrato(String codigoContrato, String nombre, String tipoServicio, String direccion, String telefono, String email, String nombreResponsable, LocalDate fechaInicio, LocalDate fechaTerminacion, LocalDate fechaConciliacion, String descripcion) {
-        this.codigoContrato = codigoContrato;
-        this.nombre = nombre;
-        this.tipoServicio = tipoServicio;
-        this.direccion = direccion;
-        this.telefono = telefono;
-        this.email = email;
-        this.nombreResponsable = nombreResponsable;
-        this.fechaInicio = fechaInicio;
-        this.fechaTerminacion = fechaTerminacion;
-        this.fechaConciliacion = fechaConciliacion;
-        this.descripcion = descripcion;
+    public Contrato(String codigoContrato, String nombre, String tipoServicio, String direccion,
+                     String telefono, String email, String nombreResponsable, Date fechaInicio,
+                     Date fechaTerminacion, Date fechaConciliacion, String descripcion) {
+        setCodigoContrato(codigoContrato);
+        setNombre(nombre);
+        setTipoServicio(tipoServicio);
+        setDireccion(direccion);
+        setTelefono(telefono);
+        setEmail(email);
+        setNombreResponsable(nombreResponsable);
+        setFechaInicio(fechaInicio);
+        setFechaTerminacion(fechaTerminacion);
+        setFechaConciliacion(fechaConciliacion);
+        setDescripcion(descripcion);
     }
 
-    // Getters y Setters
+    // Getters and Setters with validations
     public String getCodigoContrato() {
         return codigoContrato;
     }
 
     public void setCodigoContrato(String codigoContrato) {
+        if (codigoContrato == null || codigoContrato.isEmpty()) {
+            throw new IllegalArgumentException("Código de contrato no puede ser nulo o vacío");
+        }
         this.codigoContrato = codigoContrato;
     }
 
@@ -43,6 +48,9 @@ public class Contrato {
     }
 
     public void setNombre(String nombre) {
+        if (nombre == null || nombre.isEmpty()) {
+            throw new IllegalArgumentException("Nombre no puede ser nulo o vacío");
+        }
         this.nombre = nombre;
     }
 
@@ -51,6 +59,9 @@ public class Contrato {
     }
 
     public void setTipoServicio(String tipoServicio) {
+        if (tipoServicio == null || tipoServicio.isEmpty()) {
+            throw new IllegalArgumentException("Tipo de servicio no puede ser nulo o vacío");
+        }
         this.tipoServicio = tipoServicio;
     }
 
@@ -59,6 +70,9 @@ public class Contrato {
     }
 
     public void setDireccion(String direccion) {
+        if (direccion == null || direccion.isEmpty()) {
+            throw new IllegalArgumentException("Dirección no puede ser nula o vacía");
+        }
         this.direccion = direccion;
     }
 
@@ -67,6 +81,9 @@ public class Contrato {
     }
 
     public void setTelefono(String telefono) {
+        if (telefono == null || telefono.isEmpty()) {
+            throw new IllegalArgumentException("Teléfono no puede ser nulo o vacío");
+        }
         this.telefono = telefono;
     }
 
@@ -75,11 +92,10 @@ public class Contrato {
     }
 
     public void setEmail(String email) {
-        if (email.contains("@")) {
-            this.email = email;
-        } else {
-            throw new IllegalArgumentException("Email no válido.");
+        if (email == null || email.isEmpty()) {
+            throw new IllegalArgumentException("Email no puede ser nulo o vacío");
         }
+        this.email = email;
     }
 
     public String getNombreResponsable() {
@@ -87,30 +103,39 @@ public class Contrato {
     }
 
     public void setNombreResponsable(String nombreResponsable) {
+        if (nombreResponsable == null || nombreResponsable.isEmpty()) {
+            throw new IllegalArgumentException("Nombre del responsable no puede ser nulo o vacío");
+        }
         this.nombreResponsable = nombreResponsable;
     }
 
-    public LocalDate getFechaInicio() {
+    public Date getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(LocalDate fechaInicio) {
+    public void setFechaInicio(Date fechaInicio) {
+        if (fechaInicio == null) {
+            throw new IllegalArgumentException("Fecha de inicio no puede ser nula");
+        }
         this.fechaInicio = fechaInicio;
     }
 
-    public LocalDate getFechaTerminacion() {
+    public Date getFechaTerminacion() {
         return fechaTerminacion;
     }
 
-    public void setFechaTerminacion(LocalDate fechaTerminacion) {
+    public void setFechaTerminacion(Date fechaTerminacion) {
+        if (fechaTerminacion == null) {
+            throw new IllegalArgumentException("Fecha de terminación no puede ser nula");
+        }
         this.fechaTerminacion = fechaTerminacion;
     }
 
-    public LocalDate getFechaConciliacion() {
+    public Date getFechaConciliacion() {
         return fechaConciliacion;
     }
 
-    public void setFechaConciliacion(LocalDate fechaConciliacion) {
+    public void setFechaConciliacion(Date fechaConciliacion) {
         this.fechaConciliacion = fechaConciliacion;
     }
 
@@ -119,6 +144,9 @@ public class Contrato {
     }
 
     public void setDescripcion(String descripcion) {
+        if (descripcion == null || descripcion.isEmpty()) {
+            throw new IllegalArgumentException("Descripción no puede ser nula o vacía");
+        }
         this.descripcion = descripcion;
     }
 }
