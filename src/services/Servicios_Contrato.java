@@ -73,4 +73,68 @@ public class Servicios_Contrato {
 
     }
 
+    public Contrato read_Contrato(String codigoContrato) throws SQLException {
+        String sql = "SELECT * FROM \"Contratos\" WHERE \"C?digo_Contrato\" = ?";
+        Connection conexion = ControladoraServicios.getConexion();
+
+        try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
+            stmt.setString(1, codigoContrato);
+
+            try (ResultSet result = stmt.executeQuery()) {
+                if (result.next()) {
+                    return new Contrato(
+                            result.getString(1),
+                            result.getString(2),
+                            result.getString(3),
+                            result.getString(4),
+                            result.getString(5),
+                            result.getString(6),
+                            result.getString(7),
+                            result.getDate(8),
+                            result.getDate(9),
+                            result.getDate(10),
+                            result.getString(11)
+                    );
+                }
+            }
+        }
+        return null;
+    }
+
+    public boolean update_Contrato(Contrato contrato) throws SQLException {
+        String sql = "UPDATE \"Contratos\" SET \"Nombre\" = ?, \"Tipo_Servicio\" = ?, \"Direccion\" = ?, \"Telefono\" = ?, \"Email\" = ?, \"Nombre_Responsable\" = ?, \"Fecha_Inicio\" = ?, \"Fecha_Terminacion\" = ?, \"Fecha_Conciliacion\" = ?, \"Descripci?n\" = ? WHERE \"C?digo_Contrato\" = ?";
+        Connection conexion = ControladoraServicios.getConexion();
+
+        try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
+            stmt.setString(1, contrato.getNombre());
+            stmt.setString(2, contrato.getTipoServicio());
+            stmt.setString(3, contrato.getDireccion());
+            stmt.setString(4, contrato.getTelefono());
+            stmt.setString(5, contrato.getEmail());
+            stmt.setString(6, contrato.getNombreResponsable());
+            stmt.setDate(7, contrato.getFechaInicio());
+            stmt.setDate(8, contrato.getFechaTerminacion());
+            stmt.setDate(9, contrato.getFechaConciliacion());
+            stmt.setString(10, contrato.getDescripcion());
+            stmt.setString(11, contrato.getCodigoContrato());
+
+            int rowsUpdated = stmt.executeUpdate();
+            return rowsUpdated > 0;
+        }
+    }
+
+    public boolean delete_Contrato(String codigoContrato) throws SQLException {
+        String sql = "DELETE FROM \"Contratos\" WHERE \"C?digo_Contrato\" = ?";
+        Connection conexion = ControladoraServicios.getConexion();
+
+        try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
+            stmt.setString(1, codigoContrato);
+
+            int rowsDeleted = stmt.executeUpdate();
+            return rowsDeleted > 0;
+        }
+    }
+
+
+
 }
