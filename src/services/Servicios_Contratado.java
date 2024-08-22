@@ -35,7 +35,7 @@ public class Servicios_Contratado {
     }
 
     public boolean create_Contratado(Contratado contratado) throws SQLException {
-        String sql = "INSERT INTO \"Contratado\" (\"ID_Contratado\", \"C?digo_Contrato\", \"ID_Provincia\") VALUES (?, ?, ?)";
+        String sql = "INSERT INTO \"Contratado\" (\"ID_Contratado\", \"Código_Contrato\", \"ID_Provincia\") VALUES (?, ?, ?)";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {

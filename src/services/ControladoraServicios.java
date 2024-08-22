@@ -114,7 +114,7 @@ public class ControladoraServicios {
         return servicios_transporte;
     }
 
-    public static Servicios_Veterinario Servicios_Veterinario(){
+    public static Servicios_Veterinario obtener_Servicios_Veterinario(){
         if(servicios_veterinario == null)
             servicios_veterinario = new Servicios_Veterinario();
         return servicios_veterinario;

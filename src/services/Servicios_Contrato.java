@@ -50,17 +50,17 @@ public class Servicios_Contrato {
         try{
             CallableStatement stmt = conexion.prepareCall(funcion);
 
-            stmt.setString(1, contrato.getCodigoContrato());
-            stmt.setString(2, contrato.getNombre());
-            stmt.setString(3, contrato.getTipoServicio());
-            stmt.setString(4, contrato.getDireccion());
-            stmt.setString(5, contrato.getTelefono());
-            stmt.setString(6, contrato.getEmail());
-            stmt.setString(7, contrato.getNombreResponsable());
-            stmt.setDate(8, contrato.getFechaInicio());
-            stmt.setDate(9, contrato.getFechaTerminacion());
-            stmt.setDate(10, contrato.getFechaConciliacion());
-            stmt.setString(11, contrato.getDescripcion());
+            stmt.setString(2, contrato.getCodigoContrato());
+            stmt.setString(3, contrato.getNombre());
+            stmt.setString(4, contrato.getTipoServicio());
+            stmt.setString(5, contrato.getDireccion());
+            stmt.setString(6, contrato.getTelefono());
+            stmt.setString(7, contrato.getEmail());
+            stmt.setString(8, contrato.getNombreResponsable());
+            stmt.setDate(9, contrato.getFechaInicio());
+            stmt.setDate(10, contrato.getFechaTerminacion());
+            stmt.setDate(11, contrato.getFechaConciliacion());
+            stmt.setString(12, contrato.getDescripcion());
 
             stmt.execute();
             stmt.close();

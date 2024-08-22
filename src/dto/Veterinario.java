@@ -1,7 +1,6 @@
 package dto;
 
 public class Veterinario extends Contratado {
-    private String idContratado;
     private String nombreVeterinario;
     private String clinicaVeterinario;
     private String direccionVeterinario;
@@ -13,9 +12,13 @@ public class Veterinario extends Contratado {
     private String modalidadServicioVeterinario;
 
     // Constructor
-    public Veterinario(String idContratado, String codigoContrato, String idProvincia, String nombreVeterinario, String clinicaVeterinario, String direccionVeterinario, String especialidadVeterinario, String telefonoVeterinario,String faxVeterinario, String emailVeterinario, String distanciaCiudadVeterinario,String modalidadServicioVeterinario) {
+    public Veterinario(String idContratado, String codigoContrato, String idProvincia,
+                       String nombreVeterinario, String clinicaVeterinario,
+                       String direccionVeterinario, String especialidadVeterinario,
+                       String telefonoVeterinario,String faxVeterinario,
+                       String emailVeterinario, String distanciaCiudadVeterinario,
+                       String modalidadServicioVeterinario) {
         super(idContratado, codigoContrato, idProvincia);
-        setIdContratado(idContratado);
         setNombreVeterinario(nombreVeterinario);
         setClinicaVeterinario(clinicaVeterinario);
         setDireccionVeterinario(direccionVeterinario);
@@ -28,17 +31,6 @@ public class Veterinario extends Contratado {
     }
 
     // Getters and Setters with validations
-    public String getIdContratado() {
-        return idContratado;
-    }
-
-    public void setIdContratado(String idContratado) {
-        if (idContratado == null || idContratado.isEmpty()) {
-            throw new IllegalArgumentException("El ID de contratado no puede ser nulo o vacío.");
-        }
-        this.idContratado = idContratado;
-    }
-
     public String getNombreVeterinario() {
         return nombreVeterinario;
     }
