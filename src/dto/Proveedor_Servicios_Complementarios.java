@@ -3,18 +3,18 @@ package dto;
 public class Proveedor_Servicios_Complementarios extends Contratado {
     private String ID_Contratado;
     private String Nombre_Proveedor;
-    private String Dirección;
-    private String Teléfono;
+    private String Direccion;
+    private String Telefono;
     private String Email;
     private String ID_Servicio;
 
     // Constructor
-    public Proveedor_Servicios_Complementarios(String ID_Contratado, String codigoContrato, String idProvincia , String Nombre_Proveedor, String Dirección, String Teléfono, String Email, String ID_Servicio) {
+    public Proveedor_Servicios_Complementarios(String ID_Contratado, String codigoContrato, String idProvincia , String Nombre_Proveedor, String Direccion, String Telefono, String Email, String ID_Servicio) {
         super(ID_Contratado, codigoContrato, idProvincia);
         setID_Contratado(ID_Contratado);
         setNombre_Proveedor(Nombre_Proveedor);
-        setDirección(Dirección);
-        setTeléfono(Teléfono);
+        setDireccion(Direccion);
+        setTelefono(Telefono);
         setEmail(Email);
         setID_Servicio(ID_Servicio);
     }
@@ -42,26 +42,26 @@ public class Proveedor_Servicios_Complementarios extends Contratado {
         this.Nombre_Proveedor = Nombre_Proveedor;
     }
 
-    public String getDirección() {
-        return Dirección;
+    public String getDireccion() {
+        return Direccion;
     }
 
-    public void setDirección(String Dirección) {
-        if (Dirección == null || Dirección.isEmpty()) {
+    public void setDireccion(String Direccion) {
+        if (Direccion == null || Direccion.isEmpty()) {
             throw new IllegalArgumentException("La dirección no puede ser nula o vacía.");
         }
-        this.Dirección = Dirección;
+        this.Direccion = Direccion;
     }
 
-    public String getTeléfono() {
-        return Teléfono;
+    public String getTelefono() {
+        return Telefono;
     }
 
-    public void setTeléfono(String Teléfono) {
-        if (Teléfono == null || Teléfono.isEmpty()) {
+    public void setTelefono(String Telefono) {
+        if (Telefono == null || Telefono.isEmpty()) {
             throw new IllegalArgumentException("El teléfono no puede ser nulo o vacío.");
         }
-        this.Teléfono = Teléfono;
+        this.Telefono = Telefono;
     }
 
     public String getEmail() {

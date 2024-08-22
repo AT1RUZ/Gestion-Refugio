@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="" />
+    <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postgresql-42.7.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ControladoraServicios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Listados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Actividad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Adopcion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Alimento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Contrato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Donacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Alimentos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Provincias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Tipo_Alimento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Tipo_Servicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Transporte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Veterinario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestion-Refugio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion-Refugio.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/Proveedor_Servicios_Complementarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Proveedor_Servicios_Complementarios.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,14 +58,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "C:/Users/Diego/IdeaProjects/Gestion-Refugio/src/utils",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Diego\IdeaProjects\Gestion-Refugio\src\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Diego\IdeaProjects\Gestion-Refugio\libs" />
+      <recent name="C:\Users\Diego\IdeaProjects\Gestion-Refugio\src\utils" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Gestion-Refugio" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
