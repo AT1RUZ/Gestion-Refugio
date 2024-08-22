@@ -1,7 +1,6 @@
 package dto;
 
 public class Proveedor_Alimentos extends Contratado {
-    private String idContratado;
     private String nombreProveedor;
     private String direccion;
     private String email;
@@ -18,17 +17,6 @@ public class Proveedor_Alimentos extends Contratado {
     }
 
     // Getters y Setters con validaciones
-    public String getIdContratado() {
-        return idContratado;
-    }
-
-    public void setIdContratado(String idContratado) {
-        if (idContratado == null || idContratado.trim().isEmpty()) {
-            throw new IllegalArgumentException("El ID del contratado no puede ser nulo o vacío.");
-        }
-        this.idContratado = idContratado;
-    }
-
     public String getNombreProveedor() {
         return nombreProveedor;
     }
