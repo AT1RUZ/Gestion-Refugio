@@ -21,6 +21,7 @@ public class ControladoraServicios {
     private static Servicios_Tipo_Servicio servicios_tipo_servicio = null;
     private static Servicios_Transporte servicios_transporte = null;
     private static Servicios_Veterinario servicios_veterinario = null;
+    private static Listados listados = null;
 
 
 
@@ -40,6 +41,12 @@ public class ControladoraServicios {
         }
 
         return connection.getConnection();
+    }
+
+    public static Listados obtener_Listados(){
+        if (listados==null)
+            listados=new Listados();
+        return listados;
     }
 
     public static Servicios_Actividad obtener_servicios_Actividad(){
