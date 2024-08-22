@@ -53,7 +53,7 @@ public class Servicios_Proveedor_Alimentos {
         return null;
     }
 
-    public boolean actualizarProveedorAlimentos(Proveedor_Alimentos proveedor) throws SQLException {
+    public boolean update_ProveedorAlimentos(Proveedor_Alimentos proveedor) throws SQLException {
         String sql = "UPDATE \"Proveedores_Alimentos\" SET \"Nombre_Proveedor\" = ?, \"Direcci?n\" = ?, \"Email\" = ?, \"ID_Alimento\" = ? WHERE \"ID_Contratado\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
@@ -69,7 +69,7 @@ public class Servicios_Proveedor_Alimentos {
         }
     }
 
-    public boolean eliminarProveedorAlimentos(String idContratado) throws SQLException {
+    public boolean delete_ProveedorAlimentos(String idContratado) throws SQLException {
         String sql = "DELETE FROM \"Proveedores_Alimentos\" WHERE \"ID_Contratado\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
