@@ -10,15 +10,15 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        Servicios_Proveedor_Servicios_Complementarios servicio = ControladoraServicios.obtener_Servicios_Proveedores_Servicios_Complementarios();
-        LinkedList<Proveedor_Servicios_Complementarios> lista = servicio.get_proveedores_servicios_complementarios();
-        Proveedor_Servicios_Complementarios actividad = servicio.read_Proveedor("CON007");
+        Servicios_Proveedor_Alimentos servicio = ControladoraServicios.obtener_Servicios_Proveedor_Alimentos();
+        LinkedList<Proveedor_Alimentos> lista = servicio.getProveedores();
+        Proveedor_Alimentos actividad = servicio.read_ProveedorPorID("CON006");
 
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i).getNombre_Proveedor());
+            System.out.println(lista.get(i).getNombreProveedor());
         }
 
-        System.out.println(actividad.getNombre_Proveedor());
+        System.out.println(actividad.getIdContratado());
 
 
     }

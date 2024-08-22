@@ -7,7 +7,9 @@ public class Proveedor_Alimentos extends Contratado {
     private String idAlimento;
 
     // Constructor
-    public Proveedor_Alimentos(String idContratado, String codigoContrato, String idProvincia, String nombreProveedor, String direccion, String email, String idAlimento) {
+    public Proveedor_Alimentos(String idContratado, String codigoContrato,
+                               String idProvincia, String nombreProveedor,
+                               String direccion, String email, String idAlimento) {
         super(idContratado, codigoContrato, idProvincia);
         setIdContratado(idContratado);
         setNombreProveedor(nombreProveedor);
