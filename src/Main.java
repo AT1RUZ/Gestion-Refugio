@@ -10,19 +10,19 @@ import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        Servicios_Tipo_Alimento servicio = ControladoraServicios.obtener_Servicios_Tipo_Alimento();
-        LinkedList<Tipo_Alimento> lista = servicio.getTiposAlimento();
-        Tipo_Alimento actividad = servicio.read_TipoAlimentoPorID("AL001");
-        Tipo_Alimento alimento = new Tipo_Alimento("AL006", "Comida Procesada");
+        Servicios_Tipo_Servicio servicio = ControladoraServicios.obtener_Servicios_Tipo_Servicio();
+        LinkedList<Tipo_Servicio> lista = servicio.getTipoServicios();
+        Tipo_Servicio actividad = servicio.read_TipoServicio("SER001");
+        Tipo_Servicio alimento = new Tipo_Servicio("SER011", "Emergencias");
 
-//        servicio.create_TipoAlimento(alimento);
-        servicio.delete_TipoAlimento(alimento.getIdAlimento());
+//        servicio.create_TipoServicio(alimento);
+        servicio.delete_TipoServicio(alimento.getIdServicio());
 
         for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i).getNombreAlimento());
+            System.out.println(lista.get(i).getNombreServicio());
         }
 
-        System.out.println(actividad.getNombreAlimento());
+        System.out.println(actividad.getNombreServicio());
 
 
     }
