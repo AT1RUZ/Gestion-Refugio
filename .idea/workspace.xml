@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/postgresql-42.7.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ControladoraServicios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Listados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Actividad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Adopcion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Alimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Contrato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Donacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Alimentos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Provincias.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Tipo_Alimento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Tipo_Servicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Transporte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Servicios_Veterinario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/Conexion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestion-Refugio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion-Refugio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dto/Proveedor_Servicios_Complementarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Proveedor_Servicios_Complementarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Actividad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Actividad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Contrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Contrato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,16 +90,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/dto/Contrato.java</url>
-          <line>127</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

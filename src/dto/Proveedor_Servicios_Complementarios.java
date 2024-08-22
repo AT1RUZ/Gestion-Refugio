@@ -11,7 +11,6 @@ public class Proveedor_Servicios_Complementarios extends Contratado {
     // Constructor
     public Proveedor_Servicios_Complementarios(String ID_Contratado, String codigoContrato, String idProvincia , String Nombre_Proveedor, String Direccion, String Telefono, String Email, String ID_Servicio) {
         super(ID_Contratado, codigoContrato, idProvincia);
-        setID_Contratado(ID_Contratado);
         setNombre_Proveedor(Nombre_Proveedor);
         setDireccion(Direccion);
         setTelefono(Telefono);
@@ -20,17 +19,6 @@ public class Proveedor_Servicios_Complementarios extends Contratado {
     }
 
     // Getters and Setters
-    public String getID_Contratado() {
-        return ID_Contratado;
-    }
-
-    public void setID_Contratado(String ID_Contratado) {
-        if (ID_Contratado == null || ID_Contratado.isEmpty()) {
-            throw new IllegalArgumentException("El ID contratado no puede ser nulo o vacío.");
-        }
-        this.ID_Contratado = ID_Contratado;
-    }
-
     public String getNombre_Proveedor() {
         return Nombre_Proveedor;
     }
