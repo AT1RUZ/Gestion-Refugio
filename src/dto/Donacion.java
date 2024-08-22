@@ -8,18 +8,31 @@ public class Donacion {
     private String Nombre_Donante;
     private String Email_Donante;
     private String Telefono_Donante;
+    private String ID_Animal;
 
     // Constructor
-    public Donacion(String ID_Donacion, double Monto, Date Fecha, String Nombre_Donante, String Email_Donante, String Telefono_Donante) {
+    public Donacion(String ID_Donacion, double Monto, Date Fecha, String Nombre_Donante, String Email_Donante, String Telefono_Donante, String ID_Animal) {
         setID_Donacion(ID_Donacion);
         setMonto(Monto);
         setFecha(Fecha);
         setNombre_Donante(Nombre_Donante);
         setEmail_Donante(Email_Donante);
         setTelefono_Donante(Telefono_Donante);
+        setID_Animal(ID_Animal);
     }
 
     // Getters and Setters
+
+    public String getID_Animal(){
+        return ID_Animal;
+    }
+
+    public void setID_Animal(String ID_Animal) {
+        if(ID_Animal == null || ID_Animal.isEmpty())
+            throw new IllegalArgumentException("El ID del animal no puede estar vacio");
+        this.ID_Animal = ID_Animal;
+    }
+
     public String getID_Donacion() {
         return ID_Donacion;
     }
