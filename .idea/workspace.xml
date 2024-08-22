@@ -7,11 +7,7 @@
     <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/Proveedor_Servicios_Complementarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/Proveedor_Servicios_Complementarios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Actividad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Actividad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Contrato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Contrato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Adopcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Adopcion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +83,17 @@
       <updated>1723203141419</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
