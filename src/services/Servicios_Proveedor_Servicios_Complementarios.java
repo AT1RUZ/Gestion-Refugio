@@ -43,7 +43,7 @@ public class Servicios_Proveedor_Servicios_Complementarios {
     }
 
     public boolean create_ProveedorServiciosComplementarios(Proveedor_Servicios_Complementarios proveedor) throws SQLException {
-        String sql = "INSERT INTO \"Proveedor_Servicios_Complementarios\" (\"ID_Contratado\", \"Nombre_Proveedor\", \"Direcci?n\", \"Tel?fono\", \"Email\", \"ID_Servicio\") VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO \"Proveedor_Servicios_Complementarios\" (\"ID_Contratado\", \"Nombre_Proveedor\", \"Dirección\", \"Teléfono\", \"Email\", \"ID_Servicio\") VALUES (?, ?, ?, ?, ?, ?)";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
@@ -85,7 +85,7 @@ public class Servicios_Proveedor_Servicios_Complementarios {
     }
 
     public boolean update_ProveedorServiciosComplementarios(Proveedor_Servicios_Complementarios proveedor) throws SQLException {
-        String sql = "UPDATE \"Proveedor_Servicios_Complementarios\" SET \"Nombre_Proveedor\" = ?, \"Direcci?n\" = ?, \"Tel?fono\" = ?, \"Email\" = ?, \"ID_Servicio\" = ? WHERE \"ID_Contratado\" = ?";
+        String sql = "UPDATE \"Proveedor_Servicios_Complementarios\" SET \"Nombre_Proveedor\" = ?, \"Dirección\" = ?, \"Teléfono\" = ?, \"Email\" = ?, \"ID_Servicio\" = ? WHERE \"ID_Contratado\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {

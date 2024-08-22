@@ -12,7 +12,7 @@ public class Main {
         Veterinario actividad = servicioVet.read_Veterinario("CON001");
         Veterinario alimento = new Veterinario(
                 "CON011",
-                "CTR018",
+                "CTR010",
                 "P4",
                 "Diego Torres Zurita",
                 "asd",
@@ -32,7 +32,7 @@ public class Main {
         );
 
         Contrato contrato = new Contrato(
-                "CTR008",
+                "CTR010",
                 "Contrato Veterinario",
                 "Veterinario",
                 "asd",
@@ -44,17 +44,19 @@ public class Main {
                 new Date(2000, 06, 24),
                 "asd"
         );
-
+        //////
         Servicios_Contrato servicios_contrato = ControladoraServicios.obtener_Servicios_Contrato();
+//        servicios_contrato.create_Contrato(contrato);
 
-        servicios_contrato.create_Contrato(contrato);
+        //////
 
         Servicios_Contratado servicios_contratado = ControladoraServicios.obtener_Servicios_Contratado();
-
         servicios_contratado.create_Contratado(contratado);
 
         servicioVet.create_Veterinario(alimento);
 //        servicio.delete_Transporte(alimento.getIdTransporte());
+
+
 
         for (int i = 0; i < lista.size(); i++) {
             System.out.println(lista.get(i).getNombreVeterinario());

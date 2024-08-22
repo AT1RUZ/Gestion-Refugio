@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/services/Servicios_Actividad.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/services/Servicios_Animal.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/services/Servicios_Contratado.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/services/Servicios_Contrato.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/services/Servicios_Proveedor_Alimentos.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/services/Servicios_Proveedor_Servicios_Complementarios.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/services/Servicios_Transporte.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/services/Servicios_Veterinario.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />

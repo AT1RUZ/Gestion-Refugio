@@ -1,8 +1,6 @@
 package services;
 
 import dto.Contrato;
-import dto.Proveedor_Servicios_Complementarios;
-import utils.Conexion;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -43,38 +41,37 @@ public class Servicios_Contrato {
         return lista;
     }
 
-    public void create_Contrato(Contrato contrato){
+    public void create_Contrato(Contrato contrato) {
         Connection conexion = ControladoraServicios.getConexion();
-        String funcion = "{?= call public.create_contrato(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)}";
+        String sql = "INSERT INTO public.\"Contratos\" (\"Código_Contrato\", \"Nombre\", \"Tipo_Servicio\", \"Direccion\", \"Telefono\", \"Email\", \"Nombre_Responsable\", \"Fecha_Inicio\", \"Fecha_Terminacion\", \"Fecha_Conciliacion \", \"Descripción\") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-        try{
-            CallableStatement stmt = conexion.prepareCall(funcion);
+        try {
+            PreparedStatement pstmt = conexion.prepareStatement(sql);
 
-            stmt.setString(2, contrato.getCodigoContrato());
-            stmt.setString(3, contrato.getNombre());
-            stmt.setString(4, contrato.getTipoServicio());
-            stmt.setString(5, contrato.getDireccion());
-            stmt.setString(6, contrato.getTelefono());
-            stmt.setString(7, contrato.getEmail());
-            stmt.setString(8, contrato.getNombreResponsable());
-            stmt.setDate(9, contrato.getFechaInicio());
-            stmt.setDate(10, contrato.getFechaTerminacion());
-            stmt.setDate(11, contrato.getFechaConciliacion());
-            stmt.setString(12, contrato.getDescripcion());
+            pstmt.setString(1, contrato.getCodigoContrato());
+            pstmt.setString(2, contrato.getNombre());
+            pstmt.setString(3, contrato.getTipoServicio());
+            pstmt.setString(4, contrato.getDireccion());
+            pstmt.setString(5, contrato.getTelefono());
+            pstmt.setString(6, contrato.getEmail());
+            pstmt.setString(7, contrato.getNombreResponsable());
+            pstmt.setDate(8, contrato.getFechaInicio());
+            pstmt.setDate(9, contrato.getFechaTerminacion());
+            pstmt.setDate(10, contrato.getFechaConciliacion());
+            pstmt.setString(11, contrato.getDescripcion());
 
-            stmt.execute();
-            stmt.close();
+            pstmt.executeUpdate();
+            pstmt.close();
             conexion.close();
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException("Error al crear el contrato: " + e.getMessage());
         }
-
-
     }
 
+
     public Contrato read_Contrato(String codigoContrato) throws SQLException {
-        String sql = "SELECT * FROM \"Contratos\" WHERE \"C?digo_Contrato\" = ?";
+        String sql = "SELECT * FROM \"Contratos\" WHERE \"Código_Contrato\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
@@ -102,7 +99,7 @@ public class Servicios_Contrato {
     }
 
     public boolean update_Contrato(Contrato contrato) throws SQLException {
-        String sql = "UPDATE \"Contratos\" SET \"Nombre\" = ?, \"Tipo_Servicio\" = ?, \"Direccion\" = ?, \"Telefono\" = ?, \"Email\" = ?, \"Nombre_Responsable\" = ?, \"Fecha_Inicio\" = ?, \"Fecha_Terminacion\" = ?, \"Fecha_Conciliacion\" = ?, \"Descripci?n\" = ? WHERE \"C?digo_Contrato\" = ?";
+        String sql = "UPDATE \"Contratos\" SET \"Nombre\" = ?, \"Tipo_Servicio\" = ?, \"Direccion\" = ?, \"Telefono\" = ?, \"Email\" = ?, \"Nombre_Responsable\" = ?, \"Fecha_Inicio\" = ?, \"Fecha_Terminacion\" = ?, \"Fecha_Conciliacion \" = ?, \"Descripción\" = ? WHERE \"Código_Contrato\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
@@ -124,7 +121,7 @@ public class Servicios_Contrato {
     }
 
     public boolean delete_Contrato(String codigoContrato) throws SQLException {
-        String sql = "DELETE FROM \"Contratos\" WHERE \"C?digo_Contrato\" = ?";
+        String sql = "DELETE FROM \"Contratos\" WHERE \"Código_Contrato\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {

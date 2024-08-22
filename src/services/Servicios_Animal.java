@@ -9,7 +9,7 @@ public class Servicios_Animal {
     public Servicios_Animal() {}
 
     public void create_Animal(Animal animal) throws SQLException {
-        String query = "INSERT INTO \"Animal\" (\"ID_Animal\", \"Nombre\", \"Especie\", \"Raza\", \"Edad\", \"Peso\", \"Dias_Refugio\", \"Precio_Mantenimiento\", \"Precio_Adopci?n\") " +
+        String query = "INSERT INTO \"Animal\" (\"ID_Animal\", \"Nombre\", \"Especie\", \"Raza\", \"Edad\", \"Peso\", \"Dias_Refugio\", \"Precio_Mantenimiento\", \"Precio_Adopción\") " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
         Connection connection = ControladoraServicios.getConexion();
 
@@ -28,7 +28,7 @@ public class Servicios_Animal {
     }
 
     public void update_Animal(Animal animal) throws SQLException {
-        String query = "UPDATE \"Animal\" SET \"Nombre\" = ?, \"Especie\" = ?, \"Raza\" = ?, \"Edad\" = ?, \"Peso\" = ?, \"Dias_Refugio\" = ?, \"Precio_Mantenimiento\" = ?, \"Precio_Adopci?n\" = ? " +
+        String query = "UPDATE \"Animal\" SET \"Nombre\" = ?, \"Especie\" = ?, \"Raza\" = ?, \"Edad\" = ?, \"Peso\" = ?, \"Dias_Refugio\" = ?, \"Precio_Mantenimiento\" = ?, \"Precio_Adopción\" = ? " +
                 "WHERE \"ID_Animal\" = ?";
         Connection connection = ControladoraServicios.getConexion();
 

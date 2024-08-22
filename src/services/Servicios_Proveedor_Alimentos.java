@@ -10,7 +10,7 @@ public class Servicios_Proveedor_Alimentos {
     public Servicios_Proveedor_Alimentos() {}
 
     public boolean create_ProveedorAlimentos(Proveedor_Alimentos proveedor) throws SQLException {
-        String sql = "INSERT INTO \"Proveedores_Alimentos\" (\"ID_Contratado\", \"Nombre_Proveedor\", \"Direcci?n\", \"Email\", \"ID_Alimento\") VALUES (?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO \"Proveedores_Alimentos\" (\"ID_Contratado\", \"Nombre_Proveedor\", \"Dirección\", \"Email\", \"ID_Alimento\") VALUES (?, ?, ?, ?, ?)";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {
@@ -54,7 +54,7 @@ public class Servicios_Proveedor_Alimentos {
     }
 
     public boolean update_ProveedorAlimentos(Proveedor_Alimentos proveedor) throws SQLException {
-        String sql = "UPDATE \"Proveedores_Alimentos\" SET \"Nombre_Proveedor\" = ?, \"Direcci?n\" = ?, \"Email\" = ?, \"ID_Alimento\" = ? WHERE \"ID_Contratado\" = ?";
+        String sql = "UPDATE \"Proveedores_Alimentos\" SET \"Nombre_Proveedor\" = ?, \"Dirección\" = ?, \"Email\" = ?, \"ID_Alimento\" = ? WHERE \"ID_Contratado\" = ?";
         Connection conexion = ControladoraServicios.getConexion();
 
         try (PreparedStatement stmt = conexion.prepareStatement(sql)) {

@@ -14,7 +14,7 @@ public class Servicios_Actividad {
 
     public void create_Actividad(Actividad actividad) throws SQLException {
         String sql = "INSERT INTO public.\"Actividad\" (" +
-                "\"ID_Actividad\", \"Descripci?n_Actividad\", \"Precio\", \"Precio_Transporte\", " +
+                "\"ID_Actividad\", \"Descripción_Actividad\", \"Precio\", \"Precio_Transporte\", " +
                 "\"ID_Animal\", \"ID_Contratado_Veterinario\", \"ID_Contratado_Proveedor_Alimentos\", " +
                 "\"ID_Contratado_Proveedor_Servicios_Complementarios\", \"ID_Transporte\", \"Dia\", \"Hora\") " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -64,7 +64,7 @@ public class Servicios_Actividad {
 
     public void update_Actividad(Actividad actividad) throws SQLException {
         String sql = "UPDATE public.\"Actividad\" SET " +
-                "\"Descripci?n_Actividad\" = ?, \"Precio\" = ?, \"Precio_Transporte\" = ?, " +
+                "\"Descripción_Actividad\" = ?, \"Precio\" = ?, \"Precio_Transporte\" = ?, " +
                 "\"ID_Animal\" = ?, \"ID_Contratado_Veterinario\" = ?, \"ID_Contratado_Proveedor_Alimentos\" = ?, " +
                 "\"ID_Contratado_Proveedor_Servicios_Complementarios\" = ?, \"ID_Transporte\" = ?, " +
                 "\"Dia\" = ?, \"Hora\" = ? WHERE \"ID_Actividad\" = ?";
