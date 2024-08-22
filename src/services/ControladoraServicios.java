@@ -10,7 +10,6 @@ public class ControladoraServicios {
 
     private static Servicios_Actividad servicios_actividad = null;
     private static Servicios_Adopcion servicios_adopcion = null;
-    private static Servicios_Alimento servicios_alimento = null;
     private static Servicios_Animal servicios_animal = null;
     private static Servicios_Contratado servicios_contratado = null;
     private static Servicios_Contrato servicios_contrato = null;
