@@ -37,6 +37,7 @@ public class MenuItem extends javax.swing.JPanel {
         lbIcon.setIcon(icon);
         lbIcon.setBackground(new Color(239,238,244));
         lbName.setText(menuName);
+        lbName.setFont(new Font("Tahoma", Font.BOLD, 14));
         if (act != null) {
             this.act = act;
         }

@@ -32,12 +32,13 @@ public class PantallaPrincipal extends JFrame {
     }
 
     private void execute() {
-        MenuItem menuGestion = getMenuItem();
+        MenuItem menuGestion = getMenuGestion();
 
         MenuItem menuContratados = getMenuContratados();
 
         MenuItem menuOtros = getMenuOtros();
 
+        addMenu(menuGestion, menuContratados, menuOtros);
 
 
         //  create submenu staff
@@ -50,7 +51,7 @@ public class PantallaPrincipal extends JFrame {
 //            }
 //        });
 //       
-        addMenu(menuGestion, menuContratados, menuOtros);
+
     }
 
     private MenuItem getMenuOtros() {
@@ -74,13 +75,17 @@ public class PantallaPrincipal extends JFrame {
         ImageIcon iconoProveedorAlimentos = new ImageIcon("src/visuals/imagenes/proveedor_alimentos.png");
         ImageIcon iconoMenuServiciosCOmplementarios = new ImageIcon("src/visuals/imagenes/proveedor_servicios_complementarios.png");
 
+        ///////////////////
+        ImageIcon imageIcon = new ImageIcon("src/visuals/imagenes/flecha.png");
+        //////////////////
+
         MenuItem menuVeterinarios = new MenuItem(iconoVeterinarios, "Veterinarios", null);
         MenuItem menuServiciosComplementarios = new MenuItem(iconoMenuServiciosCOmplementarios, "Servicios Complementarios", null);
         MenuItem menuProveedorAlimentos = new MenuItem(iconoProveedorAlimentos, "Proveedor de Alimentos", null);
         return new MenuItem(iconoContratado, "Contratados", null, menuVeterinarios, menuProveedorAlimentos, menuServiciosComplementarios);
     }
 
-    private static MenuItem getMenuItem() {
+    private static MenuItem getMenuGestion() {
         ImageIcon iconoGestion = new ImageIcon("src/visuals/imagenes/gestion.png");
         ImageIcon iconoActividades = new ImageIcon("src/visuals/imagenes/actividades.png");
         ImageIcon iconoAdpociones = new ImageIcon("src/visuals/imagenes/adopciones.png");
@@ -88,11 +93,57 @@ public class PantallaPrincipal extends JFrame {
         ImageIcon iconoContratos = new ImageIcon("src/visuals/imagenes/contratos.png");
         ImageIcon iconoDonaciones = new ImageIcon("src/visuals/imagenes/donaciones.png");
 
-        MenuItem menuActividades = new MenuItem(iconoActividades, "Actividades", null);
-        MenuItem menuAdopciones = new MenuItem(iconoAdpociones, "Adopciones", null);
-        MenuItem menuAnimales = new MenuItem(iconoAnimales, "Animales", null);
-        MenuItem menuContratos = new MenuItem(iconoContratos, "Contratos", null);
-        MenuItem menuDonaciones = new MenuItem(iconoDonaciones, "Donaciones", null);
+        ImageIcon imageIcon = new ImageIcon("src/visuals/imagenes/flecha.png");
+
+
+//////////////////////Creacion CRUD Actividad/////////////////////
+        MenuItem createActividad = new MenuItem(imageIcon, "Añadir Actividad", null);
+        MenuItem readActividad = new MenuItem(imageIcon, "Buscar Actividad", null);
+        MenuItem updateActividad = new MenuItem(imageIcon, "Modificar Actividad", null);
+        MenuItem deleteActividad = new MenuItem(imageIcon, "Eliminar Actividad", null);
+        MenuItem mostrarActividaes = new MenuItem(imageIcon, "Mostrar Actividades", null);
+        MenuItem menuActividades = new MenuItem(iconoActividades, "Actividades", null, createActividad, readActividad, updateActividad, deleteActividad, mostrarActividaes);
+/////////////////////////////////////////////////////////////////
+
+
+///////////////////// CRUD Adopciones
+        MenuItem createAdopciones = new MenuItem(imageIcon, "Añadir Adopciones", null);
+        MenuItem readAdopciones = new MenuItem(imageIcon, "Buscar Adopciones", null);
+        MenuItem updateAdopciones = new MenuItem(imageIcon, "Modificar Adopciones", null);
+        MenuItem deleteAdopciones = new MenuItem(imageIcon, "Eliminar Adopciones", null);
+        MenuItem mostrarAdopciones = new MenuItem(imageIcon, "Mostrar Adopciones", null);
+        MenuItem menuAdopciones = new MenuItem(iconoAdpociones, "Adopciones", null,createAdopciones,readAdopciones,updateAdopciones,deleteAdopciones,mostrarAdopciones );
+//////////////////////////////////////////////////////////////////
+
+
+///////////////////// CRUD ANIMALES
+        MenuItem createAnimales = new MenuItem(imageIcon, "Añadir Animales", null);
+        MenuItem readAnimales = new MenuItem(imageIcon, "Buscar Animales", null);
+        MenuItem updateAnimales = new MenuItem(imageIcon, "Modificar Animales", null);
+        MenuItem deleteAnimales = new MenuItem(imageIcon, "Eliminar Animales", null);
+        MenuItem mostrarAnimales = new MenuItem(imageIcon, "Mostrar Animales", null);
+        MenuItem menuAnimales = new MenuItem(iconoAnimales, "Animales", null,createAnimales,readAnimales,updateAnimales,deleteAnimales,mostrarAnimales);
+/////////////////////////////////////////////////////////////////
+
+
+////////////////////  CRUD CONTRATOS
+        MenuItem createContratos = new MenuItem(imageIcon, "Añadir Contratos", null);
+        MenuItem readContratos = new MenuItem(imageIcon, "Buscar Contratos", null);
+        MenuItem updateContratos = new MenuItem(imageIcon, "Modificar Contratos", null);
+        MenuItem deleteContratos = new MenuItem(imageIcon, "Eliminar Contratos", null);
+        MenuItem mostrarContratos = new MenuItem(imageIcon, "Mostrar Contratos", null);
+        MenuItem menuContratos = new MenuItem(iconoContratos, "Contratos", null,createContratos,readContratos,updateContratos,deleteContratos,mostrarContratos);
+/////////////////////////////////////////////////////////////////
+
+
+////////////////////  CRUD DONACIONES
+        MenuItem createDonaciones = new MenuItem(imageIcon, "Añadir Donaciones", null);
+        MenuItem readDonaciones = new MenuItem(imageIcon, "Buscar Donaciones", null);
+        MenuItem updateDonaciones = new MenuItem(imageIcon, "Modificar Donaciones", null);
+        MenuItem deleteDonaciones = new MenuItem(imageIcon, "Eliminar Donaciones", null);
+        MenuItem mostrarDonaciones = new MenuItem(imageIcon, "Mostrar Donaciones", null);
+        MenuItem menuDonaciones = new MenuItem(iconoDonaciones, "Donaciones", null,createDonaciones,readDonaciones,updateDonaciones,deleteDonaciones,mostrarDonaciones);
+////////////////////////////////////////////////////////////////
 
         MenuItem menuGestion = new MenuItem(iconoGestion, "Gestión", null, menuActividades, menuAdopciones, menuAnimales, menuContratos, menuDonaciones);
         return menuGestion;
