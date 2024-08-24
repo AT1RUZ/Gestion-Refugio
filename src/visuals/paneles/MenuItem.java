@@ -5,10 +5,11 @@
  */
 package visuals.paneles;
 
-import java.awt.Dimension;
+import java.awt.*;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.Icon;
+import javax.swing.plaf.basic.BasicBorders;
 
 /**
  *
@@ -32,14 +33,16 @@ public class MenuItem extends javax.swing.JPanel {
 
     public MenuItem(Icon icon, String menuName, ActionListener act, MenuItem... subMenu) {
         initComponents();
+        setBorder(new BasicBorders.ButtonBorder(Color.BLACK, Color.BLACK,Color.BLACK,Color.BLACK));
         lbIcon.setIcon(icon);
+        lbIcon.setBackground(new Color(239,238,244));
         lbName.setText(menuName);
         if (act != null) {
             this.act = act;
         }
-        this.setSize(new Dimension(Integer.MAX_VALUE, 45));
-        this.setMaximumSize(new Dimension(Integer.MAX_VALUE, 45));
-        this.setMinimumSize(new Dimension(Integer.MAX_VALUE, 45));
+        this.setSize(new Dimension(Integer.MAX_VALUE, 60));
+        this.setMaximumSize(new Dimension(Integer.MAX_VALUE, 60));
+        this.setMinimumSize(new Dimension(Integer.MAX_VALUE, 60));
         for (int i = 0; i < subMenu.length; i++) {
             this.subMenu.add(subMenu[i]);
             subMenu[i].setVisible(false);
@@ -59,7 +62,7 @@ public class MenuItem extends javax.swing.JPanel {
         lbIcon = new javax.swing.JLabel();
         lbName = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 139, 139));
+        setBackground(new java.awt.Color(239,238,244));
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 formMousePressed(evt);
@@ -68,6 +71,7 @@ public class MenuItem extends javax.swing.JPanel {
 
         lbName.setText("Menu Name Here ...");
 
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -75,7 +79,7 @@ public class MenuItem extends javax.swing.JPanel {
                         .addComponent(jSeparator1)
                         .addGroup(layout.createSequentialGroup()
                                 .addContainerGap()
-                                .addComponent(lbIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lbName, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
                                 .addContainerGap())
@@ -88,7 +92,7 @@ public class MenuItem extends javax.swing.JPanel {
                                         .addComponent(lbName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                                 .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(lbIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addComponent(lbIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, 0))

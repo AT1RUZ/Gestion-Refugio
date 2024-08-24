@@ -8,19 +8,19 @@ package visuals.principal;
 
 
 
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+
 import visuals.paneles.MenuItem;
 
 /**
  *
  * @author RavenPC
  */
-public class PantallaPrincipal extends javax.swing.JFrame {
+public class PantallaPrincipal extends JFrame {
 
     /**
      * Creates new form Main
@@ -32,39 +32,70 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     }
 
     private void execute() {
-        ImageIcon iconStaff = new ImageIcon("src/visuals/img/about.png");
-        ImageIcon iconSetting = new ImageIcon("src/visuals/img/about.png");
-        ImageIcon iconDatabase = new ImageIcon("src/visuals/img/about.png");
-        ImageIcon iconMessage = new ImageIcon("src/visuals/img/about.png");
-        ImageIcon iconSubMenu = new ImageIcon("src/visuals/img/about.png");
-        ImageIcon iconNext = new ImageIcon("src/visuals/img/about.png");
+        MenuItem menuGestion = getMenuItem();
+
+        MenuItem menuContratados = getMenuContratados();
+
+        MenuItem menuOtros = getMenuOtros();
+
+
+
         //  create submenu staff
-        MenuItem menuStaff1 = new MenuItem(iconSubMenu, "Staff 001", new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent ae) {
+//        MenuItem menuStaff1 = new MenuItem(iconSubMenu, "Staff 001", new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent ae) {
 //                panelBody.add(new Panel1());
 //                panelBody.repaint();
 //                panelBody.revalidate();
-            }
-        });
-        MenuItem menuStaff2 = new MenuItem(iconSubMenu, "Staff 002", null);
-        MenuItem menuStaff3 = new MenuItem(iconSubMenu, "Staff 003", null);
-        //  create submenu setting message
+//            }
+//        });
+//       
+        addMenu(menuGestion, menuContratados, menuOtros);
+    }
 
-        MenuItem message1 = new MenuItem(iconNext, "Message 001", null);
-        MenuItem message2 = new MenuItem(iconNext, "Message 002", null);
-        MenuItem message3 = new MenuItem(iconNext, "Message 003", null);
+    private MenuItem getMenuOtros() {
+        ImageIcon iconoOtros = new ImageIcon("src/visuals/imagenes/otros.png");
+        ImageIcon iconoAlimentos = new ImageIcon("src/visuals/imagenes/alimento.png");
+        ImageIcon iconoServicios = new ImageIcon("src/visuals/imagenes/servicio.png");
+        ImageIcon iconoTransporte = new ImageIcon("src/visuals/imagenes/transport.png");
+        ImageIcon iconoProvincias = new ImageIcon("src/visuals/imagenes/provincias.png");
 
-        //  create submenu setting
-        MenuItem menuSetting1 = new MenuItem(iconSubMenu, "Setting 001", null);
-        MenuItem menuSettingMessage = new MenuItem(iconMessage, "Setting 002 Message", null, message1, message2, message3);
-        MenuItem menuSetting3 = new MenuItem(iconSubMenu, "Setting 003", null);
-        MenuItem menuSetting4 = new MenuItem(iconSubMenu, "Setting 004", null);
+        MenuItem menuAlimentos = new MenuItem(iconoAlimentos, "Alimentos", null);
+        MenuItem menuServicio = new MenuItem(iconoServicios, "Servicios", null);
+        MenuItem menuTransporte = new MenuItem(iconoTransporte,"Transporte",null);
+        MenuItem menuProvincias = new MenuItem(iconoProvincias, "Provincias",null);
 
-        MenuItem menuStaff = new MenuItem(iconStaff, "Staff Manegement", null, menuStaff1, menuStaff2, menuStaff3);
-        MenuItem menuSetting = new MenuItem(iconSetting, "System Setting", null, menuSetting1, menuSettingMessage, menuSetting3, menuSetting4);
-        MenuItem menuDatabase = new MenuItem(iconDatabase, "System Database", null);
-        addMenu(menuStaff, menuSetting, menuDatabase);
+        return new MenuItem(iconoOtros, "Otros", null, menuAlimentos, menuServicio, menuTransporte, menuProvincias);
+    }
+
+    private MenuItem getMenuContratados() {
+        ImageIcon iconoContratado = new ImageIcon("src/visuals/imagenes/contratados.png");
+        ImageIcon iconoVeterinarios = new ImageIcon("src/visuals/imagenes/veterinarios.png");
+        ImageIcon iconoProveedorAlimentos = new ImageIcon("src/visuals/imagenes/proveedor_alimentos.png");
+        ImageIcon iconoMenuServiciosCOmplementarios = new ImageIcon("src/visuals/imagenes/proveedor_servicios_complementarios.png");
+
+        MenuItem menuVeterinarios = new MenuItem(iconoVeterinarios, "Veterinarios", null);
+        MenuItem menuServiciosComplementarios = new MenuItem(iconoMenuServiciosCOmplementarios, "Servicios Complementarios", null);
+        MenuItem menuProveedorAlimentos = new MenuItem(iconoProveedorAlimentos, "Proveedor de Alimentos", null);
+        return new MenuItem(iconoContratado, "Contratados", null, menuVeterinarios, menuProveedorAlimentos, menuServiciosComplementarios);
+    }
+
+    private static MenuItem getMenuItem() {
+        ImageIcon iconoGestion = new ImageIcon("src/visuals/imagenes/gestion.png");
+        ImageIcon iconoActividades = new ImageIcon("src/visuals/imagenes/actividades.png");
+        ImageIcon iconoAdpociones = new ImageIcon("src/visuals/imagenes/adopciones.png");
+        ImageIcon iconoAnimales = new ImageIcon("src/visuals/imagenes/animales.png");
+        ImageIcon iconoContratos = new ImageIcon("src/visuals/imagenes/contratos.png");
+        ImageIcon iconoDonaciones = new ImageIcon("src/visuals/imagenes/donaciones.png");
+
+        MenuItem menuActividades = new MenuItem(iconoActividades, "Actividades", null);
+        MenuItem menuAdopciones = new MenuItem(iconoAdpociones, "Adopciones", null);
+        MenuItem menuAnimales = new MenuItem(iconoAnimales, "Animales", null);
+        MenuItem menuContratos = new MenuItem(iconoContratos, "Contratos", null);
+        MenuItem menuDonaciones = new MenuItem(iconoDonaciones, "Donaciones", null);
+
+        MenuItem menuGestion = new MenuItem(iconoGestion, "Gestión", null, menuActividades, menuAdopciones, menuAnimales, menuContratos, menuDonaciones);
+        return menuGestion;
     }
 
     private void addMenu(MenuItem... menu) {
@@ -87,57 +118,57 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        panelHeader = new javax.swing.JPanel();
-        panelMenu = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        menus = new javax.swing.JPanel();
-        panelBody = new javax.swing.JPanel();
+        panelHeader = new JPanel();
+        panelMenu = new JPanel();
+        jScrollPane1 = new JScrollPane();
+        menus = new JPanel();
+        panelBody = new JPanel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
-        panelHeader.setBackground(new java.awt.Color(45, 113, 248));
-        panelHeader.setPreferredSize(new java.awt.Dimension(561, 50));
+        panelHeader.setBackground(new Color(45, 113, 248));
+        panelHeader.setPreferredSize(new Dimension(561, 50));
 
-        javax.swing.GroupLayout panelHeaderLayout = new javax.swing.GroupLayout(panelHeader);
+        GroupLayout panelHeaderLayout = new GroupLayout(panelHeader);
         panelHeader.setLayout(panelHeaderLayout);
         panelHeaderLayout.setHorizontalGroup(
-                panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                panelHeaderLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGap(0, 855, Short.MAX_VALUE)
         );
         panelHeaderLayout.setVerticalGroup(
-                panelHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                panelHeaderLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
                         .addGap(0, 50, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panelHeader, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(panelHeader, BorderLayout.PAGE_START);
 
-        panelMenu.setBackground(new java.awt.Color(115, 120, 230));
-        panelMenu.setPreferredSize(new java.awt.Dimension(250, 384));
+        panelMenu.setBackground(new Color(115, 120, 230));
+        panelMenu.setPreferredSize(new Dimension(250, 384));
 
         jScrollPane1.setBorder(null);
 
-        menus.setBackground(new java.awt.Color(204, 204, 204));
-        menus.setLayout(new javax.swing.BoxLayout(menus, javax.swing.BoxLayout.Y_AXIS));
+        menus.setBackground(new Color(204, 204, 204));
+        menus.setLayout(new BoxLayout(menus, BoxLayout.Y_AXIS));
         jScrollPane1.setViewportView(menus);
 
-        javax.swing.GroupLayout panelMenuLayout = new javax.swing.GroupLayout(panelMenu);
+        GroupLayout panelMenuLayout = new GroupLayout(panelMenu);
         panelMenu.setLayout(panelMenuLayout);
         panelMenuLayout.setHorizontalGroup(
-                panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                panelMenuLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
         panelMenuLayout.setVerticalGroup(
-                panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 384, Short.MAX_VALUE)
+                panelMenuLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane1, GroupLayout.DEFAULT_SIZE, 384, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panelMenu, java.awt.BorderLayout.LINE_START);
+        getContentPane().add(panelMenu, BorderLayout.LINE_START);
 
-        panelBody.setBackground(new java.awt.Color(255, 255, 255));
-        panelBody.setLayout(new java.awt.BorderLayout());
-        getContentPane().add(panelBody, java.awt.BorderLayout.CENTER);
+        panelBody.setBackground(new Color(255, 255, 255));
+        panelBody.setLayout(new BorderLayout());
+        getContentPane().add(panelBody, BorderLayout.CENTER);
 
-        setSize(new java.awt.Dimension(871, 473));
+        setSize(new Dimension(871, 473));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -147,10 +178,10 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JPanel menus;
-    private javax.swing.JPanel panelBody;
-    private javax.swing.JPanel panelHeader;
-    private javax.swing.JPanel panelMenu;
+    private JScrollPane jScrollPane1;
+    private JPanel menus;
+    private JPanel panelBody;
+    private JPanel panelHeader;
+    private JPanel panelMenu;
     // End of variables declaration//GEN-END:variables
 }
