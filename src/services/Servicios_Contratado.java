@@ -20,6 +20,7 @@ public class Servicios_Contratado {
         LinkedList<Proveedor_Alimentos> listaPA = spa.getProveedores();
         lista.addAll(listaPA);
         LinkedList<Proveedor_Servicios_Complementarios> listaPSC = spsc.get_proveedores_servicios_complementarios();
+        lista.addAll(listaPSC);
 
         return lista;
     }
