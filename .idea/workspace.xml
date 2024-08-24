@@ -5,16 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dto/Contrato_Proveedor_Alimentos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/Contrato_Proveedor_Servicios_Complementarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/Contrato_Veterinario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/Plan_Ingresos_Adopciones_Donaciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/Programa_Actividades_Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/Veterinario_Activo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/AbsoluteLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/JPlaceHolder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/NefAnimacion_V2_1_jdk18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/AbsoluteLayout.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/JPlaceHolder.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/NefAnimacion_V2.1_jdk18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/AddAnimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/AddEntidad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/Login2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/MainWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/Prueba.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/Prueba.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/RSButtonMetro/RSButtonMetro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/RSButtonMetro/border.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/about.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/android.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/collection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/feeedback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/ios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/market.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img/web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/android.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/collection.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/feeedback.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/ios.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/market.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/img1/web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/CambiaPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlAndroid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlFeeBack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlIOS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlMarket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/principal/Principal.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/principal/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gestion-Refugio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion-Refugio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ControladoraServicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ControladoraServicios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Listados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Listados.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +72,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -46,22 +96,33 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "git-widget-placeholder": "Segundo-Branch",
     "jdk.selected.JAVA_MODULE": "20",
-    "last_opened_file_path": "C:/Users/Diego/IdeaProjects/Gestion-Refugio/src/utils",
-    "project.structure.last.edited": "Libraries",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Diego/Documents/GitHub/gestion-refugio/src/visuals",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals" />
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\libs" />
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals\principal\" />
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals\paneles\" />
       <recent name="C:\Users\Diego\IdeaProjects\Gestion-Refugio\src\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals\principal" />
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals\RSButtonMetro" />
+      <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals\paneles\" />
       <recent name="C:\Users\Diego\IdeaProjects\Gestion-Refugio\libs" />
       <recent name="C:\Users\Diego\IdeaProjects\Gestion-Refugio\src\utils" />
     </key>
@@ -96,7 +157,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Segundo-Branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

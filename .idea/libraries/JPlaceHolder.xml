@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JPlaceHolder">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/JPlaceHolder.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
