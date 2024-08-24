@@ -5,58 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/AbsoluteLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/JPlaceHolder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/NefAnimacion_V2_1_jdk18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/AbsoluteLayout.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/JPlaceHolder.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/NefAnimacion_V2.1_jdk18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/AddAnimal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/AddEntidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/Login2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/MainWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/Prueba.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/Prueba.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/RSButtonMetro/RSButtonMetro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/RSButtonMetro/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/about.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/collection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/feeedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/ios.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/market.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img/web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/android.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/collection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/feeedback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/ios.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/market.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/img1/web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/CambiaPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlAndroid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlChat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlFeeBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlIOS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlMarket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlWeb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/principal/Principal.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/visuals/principal/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gestion-Refugio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gestion-Refugio.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Servicios_Contratado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visuals/paneles/pnlCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visuals/paneles/pnlFeeBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlFeeBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visuals/paneles/pnlHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/paneles/pnlHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visuals/principal/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/principal/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

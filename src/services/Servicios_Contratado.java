@@ -1,7 +1,6 @@
 package services;
 
-import dto.Contratado;
-import dto.Contrato;
+import dto.*;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -12,25 +11,16 @@ public class Servicios_Contratado {
 
     public LinkedList<Contratado> getContratados() throws SQLException {
         LinkedList<Contratado> lista = new LinkedList<>();
-        Connection conexion = ControladoraServicios.getConexion();
-        String sql = "select * from public.\"Contratado\"";
-        PreparedStatement statement = conexion.prepareStatement(sql);
-        statement.execute();
-        ResultSet result = statement.getResultSet();
+        Servicios_Veterinario sv = ControladoraServicios.obtener_Servicios_Veterinario();
+        Servicios_Proveedor_Alimentos spa = ControladoraServicios.obtener_Servicios_Proveedor_Alimentos();
+        Servicios_Proveedor_Servicios_Complementarios spsc = ControladoraServicios.obtener_Servicios_Proveedores_Servicios_Complementarios();
 
-        while (result.next()){
-            Contratado objeto = new Contratado(
-                    result.getString(1),
-                    result.getString(2),
-                    result.getString(3)
-            );
+        LinkedList<Veterinario> listaV = sv.getAllVeterinarios();
+        lista.addAll(listaV);
+        LinkedList<Proveedor_Alimentos> listaPA = spa.getProveedores();
+        lista.addAll(listaPA);
+        LinkedList<Proveedor_Servicios_Complementarios> listaPSC = spsc.get_proveedores_servicios_complementarios();
 
-            lista.add(objeto);
-        }
-
-        result.close();
-        statement.close();
-        conexion.close();
         return lista;
     }
 

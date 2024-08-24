@@ -10,8 +10,8 @@ import java.awt.MouseInfo;
 import java.awt.Point;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.*;
+
 import visuals.paneles.CambiaPanel;
 
 /**
@@ -77,7 +77,7 @@ public class Principal extends javax.swing.JFrame {
         pnlMenu.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 5, 0, 0, new Color(239, 238, 244)));
 
         uno.setForeground(new Color(128, 128, 131));
-//        uno.setIcon(new javax.swing.ImageIcon(getClass().getResource("src/visuals/img/home.png"))); // NOI18N
+        uno.setIcon(new ImageIcon("src/visuals/img/home.png")); // NOI18N
         uno.setText("Home");
         uno.setColorHover(new Color(204, 204, 204));
         uno.setColorNormal(new Color(204, 204, 204));
@@ -148,7 +148,7 @@ public class Principal extends javax.swing.JFrame {
 
         dos.setBackground(new Color(239, 238, 244));
         dos.setForeground(new Color(128, 128, 131));
-//        dos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/collection.png"))); // NOI18N
+        dos.setIcon(new ImageIcon("src/visuals/img/collection.png")); // NOI18N
         dos.setText("Collection");
         dos.setColorHover(new Color(204, 204, 204));
         dos.setColorNormal(new Color(239, 238, 244));
@@ -172,7 +172,7 @@ public class Principal extends javax.swing.JFrame {
 
         cinco.setBackground(new Color(239, 238, 244));
         cinco.setForeground(new Color(128, 128, 131));
-//        cinco.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/market.png"))); // NOI18N
+        cinco.setIcon(new ImageIcon("src/visuals/img/market.png")); // NOI18N
         cinco.setText("Market");
         cinco.setColorHover(new Color(204, 204, 204));
         cinco.setColorNormal(new Color(239, 238, 244));
@@ -219,7 +219,7 @@ public class Principal extends javax.swing.JFrame {
 
         ocho.setBackground(new Color(239, 238, 244));
         ocho.setForeground(new Color(128, 128, 131));
-//        ocho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/web.png"))); // NOI18N
+        ocho.setIcon(new ImageIcon("src/visuals/img/web.png")); // NOI18N
         ocho.setText("Web");
         ocho.setColorHover(new Color(204, 204, 204));
         ocho.setColorNormal(new Color(239, 238, 244));
@@ -243,7 +243,7 @@ public class Principal extends javax.swing.JFrame {
 
         siete.setBackground(new Color(239, 238, 244));
         siete.setForeground(new Color(128, 128, 131));
-//        siete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ios.png"))); // NOI18N
+        siete.setIcon(new ImageIcon("src/visuals/img/ios.png")); // NOI18N
         siete.setText("IOS");
         siete.setColorHover(new Color(204, 204, 204));
         siete.setColorNormal(new Color(239, 238, 244));
@@ -267,7 +267,7 @@ public class Principal extends javax.swing.JFrame {
 
         seis.setBackground(new Color(239, 238, 244));
         seis.setForeground(new Color(128, 128, 131));
-//        seis.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/android.png"))); // NOI18N
+        seis.setIcon(new ImageIcon("src/visuals/img/android.png")); // NOI18N
         seis.setText("Android");
         seis.setColorHover(new Color(204, 204, 204));
         seis.setColorNormal(new Color(239, 238, 244));
@@ -291,7 +291,7 @@ public class Principal extends javax.swing.JFrame {
 
         cuatro.setBackground(new Color(239, 238, 244));
         cuatro.setForeground(new Color(128, 128, 131));
-//        cuatro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/feeedback.png"))); // NOI18N
+        cuatro.setIcon(new ImageIcon("src/visuals/img/feeedback.png")); // NOI18N
         cuatro.setText("FeedBack");
         cuatro.setColorHover(new Color(204, 204, 204));
         cuatro.setColorNormal(new Color(239, 238, 244));
@@ -378,7 +378,7 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-//        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/menu.png"))); // NOI18N
+        jButton1.setIcon(new ImageIcon("src/visuals/img/menu.png")); // NOI18N
         jButton1.setBorder(null);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

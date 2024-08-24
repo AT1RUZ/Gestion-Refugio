@@ -5,6 +5,8 @@
  */
 package visuals.paneles;
 
+import javax.swing.*;
+
 /**
  *
  * @author RojeruSan
@@ -39,7 +41,7 @@ public class pnlCollection extends javax.swing.JPanel {
         jLabel5.setText("EJEMPLO DE MENU HECHO EN JAVA");
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/about.png"))); // NOI18N
+        jLabel6.setIcon(new ImageIcon("src/visuals/img/about.png")); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Roboto", 1, 48)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(128, 128, 131));
