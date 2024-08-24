@@ -77,8 +77,8 @@ public class Principal extends javax.swing.JFrame {
         pnlMenu.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 5, 0, 0, new Color(239, 238, 244)));
 
         uno.setForeground(new Color(128, 128, 131));
-        uno.setIcon(new ImageIcon("src/visuals/img/home.png")); // NOI18N
-        uno.setText("Home");
+        uno.setIcon(new ImageIcon("src/visuals/imagenes/actividades.png")); // NOI18N
+        uno.setText("Actividades");
         uno.setColorHover(new Color(204, 204, 204));
         uno.setColorNormal(new Color(204, 204, 204));
         uno.setColorPressed(new Color(204, 204, 204));

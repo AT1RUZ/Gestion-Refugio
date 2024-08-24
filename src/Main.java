@@ -11,18 +11,18 @@ import java.util.LinkedList;
 
 public class Main {
     public static  void main(String[] args) throws SQLException, ClassNotFoundException {
-        Servicios_Contratado listados = ControladoraServicios.obtener_Servicios_Contratado();
+//        Servicios_Contratado listados = ControladoraServicios.obtener_Servicios_Contratado();
+//
+//        LinkedList<Contratado> listado = listados.getContratados();
+//
+//        for (int i = 0; i < listado.size(); i++) {
+//            System.out.println(listado.get(i).getCodigoContrato());
+//        }
 
-        LinkedList<Contratado> listado = listados.getContratados();
-
-        for (int i = 0; i < listado.size(); i++) {
-            System.out.println(listado.get(i).getCodigoContrato());
-        }
-
-//        SwingUtilities.invokeLater(() -> {
-//            Principal login = new Principal();
-//            login.setVisible(true);
-//        });
+        SwingUtilities.invokeLater(() -> {
+            Principal login = new Principal();
+            login.setVisible(true);
+        });
 
     }
 }
