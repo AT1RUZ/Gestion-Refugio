@@ -54,7 +54,7 @@ public class PantallaPrincipal extends JFrame {
 
 
     }
-
+/////////////////////////////////// de actividad
     private  ActionListener createActividad(){
        return new ActionListener() {
             @Override
@@ -106,7 +106,548 @@ public class PantallaPrincipal extends JFrame {
             }
         };
     }
+//////////////////////////////de adopciones
+    private  ActionListener createAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateAdopciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadAdopciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateAdopciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteAdopciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
 
+    private ActionListener mostrarAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarAdopciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+//////////////////////para veterinarios
+private  ActionListener createVeterinarios(){
+    return new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent ae) {
+            panelBody.add(new PanelCreateVeterinarios());
+            panelBody.repaint();
+            panelBody.revalidate();
+        }
+    };
+}
+    private  ActionListener readAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadVeterinarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateAdopciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateVeterinarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteVeterinarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteVeterinarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarVeterinarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarVeterinarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+///////////////////para animales
+private  ActionListener createAnimales(){
+    return new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent ae) {
+            panelBody.add(new PanelCreateAnimales());
+            panelBody.repaint();
+            panelBody.revalidate();
+        }
+    };
+}
+    private  ActionListener readAnimales(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadAnimales());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateAnimales(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateAnimales());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteAnimales(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteAnimales());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarAnimales(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarAnimales());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    ////////////////////////para contratos
+    private  ActionListener createContratos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateContratos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readContratos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadContratos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateContratos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateContratos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteContratos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteContratos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarContratos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarContratos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+
+////////////////////////////para donaciones
+private  ActionListener createDonaciones(){
+    return new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent ae) {
+            panelBody.add(new PanelCreateDonaciones());
+            panelBody.repaint();
+            panelBody.revalidate();
+        }
+    };
+}
+    private  ActionListener readDonaciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadDonaciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateDonaciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateDonaciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteDonaciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteDonaciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarDonaciones(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarDonaciones());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    ////////////////////////////////para alimentos
+
+    private  ActionListener createAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    ///////////////////////////para Servicios
+    private  ActionListener createServicios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateServicios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readServicios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadServicios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateServicios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateServicios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteServicios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteServicios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarServicios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarServicios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    ///////////////////////para transporte
+    private  ActionListener createTransporte(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateTransporte());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readTransporte(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadTransporte());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateTransporte(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateTransporte());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteTransporte(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteTransporte());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarTransporte(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarTransporte());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    ////////////////////para proveedor de alimentos
+    private  ActionListener createProveedorAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateProveedorAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readProveedorAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadProveedorAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateProveedorAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateProveedorAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteProveedorAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteProveedorAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarProveedorAlimentos(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarProveedorAlimentos());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    /////////////////////////// para servicios complementarios
+    private  ActionListener createServiciosComplementarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateServiciosComplementarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readServiciosComplementarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadServiciosComplementarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateServiciosComplementarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateServiciosComplementarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteServiciosComplementarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteServiciosComplementarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarServiciosComplementarios(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarServiciosComplementarios());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+      ////////////////para provincias
+
+    private ActionListener mostrarProvincias(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarProvincias());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
     private MenuItem getMenuOtros() {
         ImageIcon iconoOtros = new ImageIcon("src/visuals/imagenes/otros.png");
         ImageIcon iconoAlimentos = new ImageIcon("src/visuals/imagenes/alimento.png");
