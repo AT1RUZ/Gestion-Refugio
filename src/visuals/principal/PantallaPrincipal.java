@@ -169,7 +169,7 @@ private  ActionListener createVeterinarios(){
         }
     };
 }
-    private  ActionListener readAdopciones(){
+    private  ActionListener readVeterinarios(){
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -179,7 +179,7 @@ private  ActionListener createVeterinarios(){
             }
         };
     }
-    private  ActionListener updateAdopciones(){
+    private  ActionListener updateVeterinarios(){
         return new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent ae) {
@@ -661,34 +661,34 @@ private  ActionListener createDonaciones(){
         //////////////////
 
         ///////////
-        MenuItem createAlimentos = new MenuItem(imageIcon, "Añadir Alimentos", null);
-        MenuItem readAlimentos = new MenuItem(imageIcon, "Buscar Alimentos", null);
-        MenuItem updateAlimentos = new MenuItem(imageIcon, "Modificar Alimentos", null);
-        MenuItem deleteAlimentos = new MenuItem(imageIcon, "Eliminar Alimentos", null);
-        MenuItem mostrarAlimentos = new MenuItem(imageIcon, "Mostrar Alimentos", null);
+        MenuItem createAlimentos = new MenuItem(imageIcon, "Añadir Alimentos", this.createAlimentos());
+        MenuItem readAlimentos = new MenuItem(imageIcon, "Buscar Alimentos", this.readAlimentos());
+        MenuItem updateAlimentos = new MenuItem(imageIcon, "Modificar Alimentos", this.updateAlimentos());
+        MenuItem deleteAlimentos = new MenuItem(imageIcon, "Eliminar Alimentos", this.deleteAlimentos());
+        MenuItem mostrarAlimentos = new MenuItem(imageIcon, "Mostrar Alimentos", this.mostrarAlimentos());
         MenuItem menuAlimentos = new MenuItem(iconoAlimentos, "Alimentos", null,createAlimentos,readAlimentos,updateAlimentos,deleteAlimentos,mostrarAlimentos);
         ///////////
 
         //////////
-        MenuItem createServicios = new MenuItem(imageIcon, "Añadir Servicios", null);
-        MenuItem readServicios = new MenuItem(imageIcon, "Buscar Servicios", null);
-        MenuItem updateServicios = new MenuItem(imageIcon, "Modificar Servicios", null);
-        MenuItem deleteServicios = new MenuItem(imageIcon, "Eliminar Servicios", null);
-        MenuItem mostrarServicios = new MenuItem(imageIcon, "Mostrar Servicios", null);
+        MenuItem createServicios = new MenuItem(imageIcon, "Añadir Servicios", this.createServicios());
+        MenuItem readServicios = new MenuItem(imageIcon, "Buscar Servicios", this.readServicios());
+        MenuItem updateServicios = new MenuItem(imageIcon, "Modificar Servicios", this.updateServicios());
+        MenuItem deleteServicios = new MenuItem(imageIcon, "Eliminar Servicios", this.deleteServicios());
+        MenuItem mostrarServicios = new MenuItem(imageIcon, "Mostrar Servicios", this.mostrarServicios());
         MenuItem menuServicio = new MenuItem(iconoServicios, "Servicios", null,createServicios,readServicios,updateServicios,deleteServicios,mostrarServicios);
         //////////
 
         ///////////
-        MenuItem createTransporte = new MenuItem(imageIcon, "Añadir Transporte", null);
-        MenuItem readTransporte = new MenuItem(imageIcon, "Buscar Transporte", null);
-        MenuItem updateTransporte = new MenuItem(imageIcon, "Modificar Transporte", null);
-        MenuItem deleteTransporte = new MenuItem(imageIcon, "Eliminar Transporte", null);
-        MenuItem mostrarTransporte = new MenuItem(imageIcon, "Mostrar Transporte", null);
+        MenuItem createTransporte = new MenuItem(imageIcon, "Añadir Transporte", this.createTransporte());
+        MenuItem readTransporte = new MenuItem(imageIcon, "Buscar Transporte", this.readTransporte());
+        MenuItem updateTransporte = new MenuItem(imageIcon, "Modificar Transporte", this.updateTransporte());
+        MenuItem deleteTransporte = new MenuItem(imageIcon, "Eliminar Transporte", this.deleteTransporte());
+        MenuItem mostrarTransporte = new MenuItem(imageIcon, "Mostrar Transporte", this.mostrarTransporte());
         MenuItem menuTransporte = new MenuItem(iconoTransporte,"Transporte",null,createTransporte,readTransporte,updateTransporte,deleteTransporte,mostrarTransporte);
         ///////////
 
         /////////////
-        MenuItem mostrarProvincias = new MenuItem(imageIcon, "Mostrar Provincias", null);
+        MenuItem mostrarProvincias = new MenuItem(imageIcon, "Mostrar Provincias", this.mostrarProvincias());
         MenuItem menuProvincias = new MenuItem(iconoProvincias, "Provincias",null,mostrarProvincias);
         //////////
 
@@ -706,29 +706,29 @@ private  ActionListener createDonaciones(){
         //////////////////
 
         //////////////////crud veterinarios
-        MenuItem createVeterinarios = new MenuItem(imageIcon, "Añadir Veterinarios", null);
-        MenuItem readVeterinarios = new MenuItem(imageIcon, "Buscar Veterinarios", null);
-        MenuItem updateVeterinarios = new MenuItem(imageIcon, "Modificar Veterinarios", null);
-        MenuItem deleteVeterinarios = new MenuItem(imageIcon, "Eliminar Veterinarios", null);
-        MenuItem mostrarVeterinarios = new MenuItem(imageIcon, "Mostrar Veterinarios", null);
+        MenuItem createVeterinarios = new MenuItem(imageIcon, "Añadir Veterinarios", this.createVeterinarios());
+        MenuItem readVeterinarios = new MenuItem(imageIcon, "Buscar Veterinarios",this.readVeterinarios() );
+        MenuItem updateVeterinarios = new MenuItem(imageIcon, "Modificar Veterinarios", this.updateVeterinarios());
+        MenuItem deleteVeterinarios = new MenuItem(imageIcon, "Eliminar Veterinarios", this.deleteVeterinarios());
+        MenuItem mostrarVeterinarios = new MenuItem(imageIcon, "Mostrar Veterinarios", this.mostrarVeterinarios());
         MenuItem menuVeterinarios = new MenuItem(iconoVeterinarios, "Veterinarios", null,createVeterinarios,readVeterinarios,updateVeterinarios,deleteVeterinarios,mostrarVeterinarios);
         //////////
 
         /////////////////crud s.compl
-        MenuItem createServiciosComplementarios = new MenuItem(imageIcon, "Añadir Servicios Complementarios", null);
-        MenuItem readServiciosComplementarios = new MenuItem(imageIcon, "Buscar Servicios Complementarios", null);
-        MenuItem updateServiciosComplementarios = new MenuItem(imageIcon, "Modificar Servicios Complementarios", null);
-        MenuItem deleteServiciosComplementarios = new MenuItem(imageIcon, "Eliminar Servicios Complementarios", null);
-        MenuItem mostrarServiciosComplementarios = new MenuItem(imageIcon, "Mostrar Servicios Complementarios", null);
+        MenuItem createServiciosComplementarios = new MenuItem(imageIcon, "Añadir Servicios Complementarios", this.createServiciosComplementarios());
+        MenuItem readServiciosComplementarios = new MenuItem(imageIcon, "Buscar Servicios Complementarios", this.readServiciosComplementarios());
+        MenuItem updateServiciosComplementarios = new MenuItem(imageIcon, "Modificar Servicios Complementarios", this.updateServiciosComplementarios());
+        MenuItem deleteServiciosComplementarios = new MenuItem(imageIcon, "Eliminar Servicios Complementarios", this.deleteServiciosComplementarios());
+        MenuItem mostrarServiciosComplementarios = new MenuItem(imageIcon, "Mostrar Servicios Complementarios", this.mostrarServiciosComplementarios());
         MenuItem menuServiciosComplementarios = new MenuItem(iconoMenuServiciosCOmplementarios, "Servicios Complementarios", null,createServiciosComplementarios,readServiciosComplementarios,updateServiciosComplementarios,deleteServiciosComplementarios,mostrarServiciosComplementarios);
         ///////
 
         ////////////////crud proveedor
-        MenuItem createProveedorAlimentos = new MenuItem(imageIcon, "Añadir Proveedor de Alimentos", null);
-        MenuItem readProveedorAlimentos = new MenuItem(imageIcon, "Buscar Proveedor de Alimentos", null);
-        MenuItem updateProveedorAlimentos = new MenuItem(imageIcon, "Modificar Proveedor de Alimentos", null);
-        MenuItem deleteProveedorAlimentos = new MenuItem(imageIcon, "Eliminar Proveedor de Alimentos", null);
-        MenuItem mostrarProveedorAlimentos = new MenuItem(imageIcon, "Mostrar Proveedor de Alimentos", null);
+        MenuItem createProveedorAlimentos = new MenuItem(imageIcon, "Añadir Proveedor de Alimentos", this.createProveedorAlimentos());
+        MenuItem readProveedorAlimentos = new MenuItem(imageIcon, "Buscar Proveedor de Alimentos", this.readProveedorAlimentos());
+        MenuItem updateProveedorAlimentos = new MenuItem(imageIcon, "Modificar Proveedor de Alimentos", this.updateProveedorAlimentos());
+        MenuItem deleteProveedorAlimentos = new MenuItem(imageIcon, "Eliminar Proveedor de Alimentos", this.deleteProveedorAlimentos());
+        MenuItem mostrarProveedorAlimentos = new MenuItem(imageIcon, "Mostrar Proveedor de Alimentos", this.mostrarProveedorAlimentos());
         MenuItem menuProveedorAlimentos = new MenuItem(iconoProveedorAlimentos, "Proveedor de Alimentos", null,createProveedorAlimentos,readProveedorAlimentos,updateProveedorAlimentos,deleteProveedorAlimentos,mostrarProveedorAlimentos);
         ///////
 
@@ -760,41 +760,41 @@ private  ActionListener createDonaciones(){
 
 
 ///////////////////// CRUD Adopciones
-        MenuItem createAdopciones = new MenuItem(imageIcon, "Añadir Adopciones", null);
-        MenuItem readAdopciones = new MenuItem(imageIcon, "Buscar Adopciones", null);
-        MenuItem updateAdopciones = new MenuItem(imageIcon, "Modificar Adopciones", null);
-        MenuItem deleteAdopciones = new MenuItem(imageIcon, "Eliminar Adopciones", null);
-        MenuItem mostrarAdopciones = new MenuItem(imageIcon, "Mostrar Adopciones", null);
+        MenuItem createAdopciones = new MenuItem(imageIcon, "Añadir Adopciones", this.createAdopciones());
+        MenuItem readAdopciones = new MenuItem(imageIcon, "Buscar Adopciones", this.readAdopciones());
+        MenuItem updateAdopciones = new MenuItem(imageIcon, "Modificar Adopciones", this.updateAdopciones());
+        MenuItem deleteAdopciones = new MenuItem(imageIcon, "Eliminar Adopciones", this.deleteAdopciones());
+        MenuItem mostrarAdopciones = new MenuItem(imageIcon, "Mostrar Adopciones", this.mostrarAdopciones());
         MenuItem menuAdopciones = new MenuItem(iconoAdpociones, "Adopciones", null,createAdopciones,readAdopciones,updateAdopciones,deleteAdopciones,mostrarAdopciones );
 //////////////////////////////////////////////////////////////////
 
 
 ///////////////////// CRUD ANIMALES
-        MenuItem createAnimales = new MenuItem(imageIcon, "Añadir Animales", null);
-        MenuItem readAnimales = new MenuItem(imageIcon, "Buscar Animales", null);
-        MenuItem updateAnimales = new MenuItem(imageIcon, "Modificar Animales", null);
-        MenuItem deleteAnimales = new MenuItem(imageIcon, "Eliminar Animales", null);
-        MenuItem mostrarAnimales = new MenuItem(imageIcon, "Mostrar Animales", null);
+        MenuItem createAnimales = new MenuItem(imageIcon, "Añadir Animales", this.createAnimales());
+        MenuItem readAnimales = new MenuItem(imageIcon, "Buscar Animales", this.readAnimales());
+        MenuItem updateAnimales = new MenuItem(imageIcon, "Modificar Animales", this.updateAnimales());
+        MenuItem deleteAnimales = new MenuItem(imageIcon, "Eliminar Animales", this.deleteAnimales());
+        MenuItem mostrarAnimales = new MenuItem(imageIcon, "Mostrar Animales", this.mostrarAnimales());
         MenuItem menuAnimales = new MenuItem(iconoAnimales, "Animales", null,createAnimales,readAnimales,updateAnimales,deleteAnimales,mostrarAnimales);
 /////////////////////////////////////////////////////////////////
 
 
 ////////////////////  CRUD CONTRATOS
-        MenuItem createContratos = new MenuItem(imageIcon, "Añadir Contratos", null);
-        MenuItem readContratos = new MenuItem(imageIcon, "Buscar Contratos", null);
-        MenuItem updateContratos = new MenuItem(imageIcon, "Modificar Contratos", null);
-        MenuItem deleteContratos = new MenuItem(imageIcon, "Eliminar Contratos", null);
-        MenuItem mostrarContratos = new MenuItem(imageIcon, "Mostrar Contratos", null);
+        MenuItem createContratos = new MenuItem(imageIcon, "Añadir Contratos", this.createContratos());
+        MenuItem readContratos = new MenuItem(imageIcon, "Buscar Contratos", this.readContratos());
+        MenuItem updateContratos = new MenuItem(imageIcon, "Modificar Contratos", this.updateContratos());
+        MenuItem deleteContratos = new MenuItem(imageIcon, "Eliminar Contratos", this.deleteContratos());
+        MenuItem mostrarContratos = new MenuItem(imageIcon, "Mostrar Contratos", this.mostrarContratos());
         MenuItem menuContratos = new MenuItem(iconoContratos, "Contratos", null,createContratos,readContratos,updateContratos,deleteContratos,mostrarContratos);
 /////////////////////////////////////////////////////////////////
 
 
 ////////////////////  CRUD DONACIONES
-        MenuItem createDonaciones = new MenuItem(imageIcon, "Añadir Donaciones", null);
-        MenuItem readDonaciones = new MenuItem(imageIcon, "Buscar Donaciones", null);
-        MenuItem updateDonaciones = new MenuItem(imageIcon, "Modificar Donaciones", null);
-        MenuItem deleteDonaciones = new MenuItem(imageIcon, "Eliminar Donaciones", null);
-        MenuItem mostrarDonaciones = new MenuItem(imageIcon, "Mostrar Donaciones", null);
+        MenuItem createDonaciones = new MenuItem(imageIcon, "Añadir Donaciones", this.createDonaciones());
+        MenuItem readDonaciones = new MenuItem(imageIcon, "Buscar Donaciones", this.readDonaciones());
+        MenuItem updateDonaciones = new MenuItem(imageIcon, "Modificar Donaciones", this.updateDonaciones());
+        MenuItem deleteDonaciones = new MenuItem(imageIcon, "Eliminar Donaciones", this.deleteDonaciones());
+        MenuItem mostrarDonaciones = new MenuItem(imageIcon, "Mostrar Donaciones", this.mostrarDonaciones());
         MenuItem menuDonaciones = new MenuItem(iconoDonaciones, "Donaciones", null,createDonaciones,readDonaciones,updateDonaciones,deleteDonaciones,mostrarDonaciones);
 ////////////////////////////////////////////////////////////////
 
