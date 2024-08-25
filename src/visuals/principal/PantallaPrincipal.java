@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import javax.swing.*;
 
 import visuals.paneles.MenuItem;
+import visuals.paneles.*;
 
 /**
  *
@@ -50,8 +51,60 @@ public class PantallaPrincipal extends JFrame {
 //                panelBody.revalidate();
 //            }
 //        });
-//       
 
+
+    }
+
+    private  ActionListener createActividad(){
+       return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelCreateActividad());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener readActividad(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelReadActividad());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener updateActividad(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelUpdateActividad());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+    private  ActionListener deleteActividad(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+                panelBody.add(new PanelDeleteActividad());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
+    }
+
+    private ActionListener mostrarActividades(){
+        return new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                panelBody.add(new PanelMostrarActividades());
+                panelBody.repaint();
+                panelBody.revalidate();
+            }
+        };
     }
 
     private MenuItem getMenuOtros() {
@@ -144,7 +197,7 @@ public class PantallaPrincipal extends JFrame {
         return new MenuItem(iconoContratado, "Contratados", null, menuVeterinarios, menuProveedorAlimentos, menuServiciosComplementarios);
     }
 
-    private static MenuItem getMenuGestion() {
+    private MenuItem getMenuGestion() {
         ImageIcon iconoGestion = new ImageIcon("src/visuals/imagenes/gestion.png");
         ImageIcon iconoActividades = new ImageIcon("src/visuals/imagenes/actividades.png");
         ImageIcon iconoAdpociones = new ImageIcon("src/visuals/imagenes/adopciones.png");
@@ -156,11 +209,11 @@ public class PantallaPrincipal extends JFrame {
 
 
 //////////////////////Creacion CRUD Actividad/////////////////////
-        MenuItem createActividad = new MenuItem(imageIcon, "Añadir Actividad", null);
-        MenuItem readActividad = new MenuItem(imageIcon, "Buscar Actividad", null);
-        MenuItem updateActividad = new MenuItem(imageIcon, "Modificar Actividad", null);
-        MenuItem deleteActividad = new MenuItem(imageIcon, "Eliminar Actividad", null);
-        MenuItem mostrarActividaes = new MenuItem(imageIcon, "Mostrar Actividades", null);
+        MenuItem createActividad = new MenuItem(imageIcon, "Añadir Actividad", this.createActividad());
+        MenuItem readActividad = new MenuItem(imageIcon, "Buscar Actividad", this.readActividad());
+        MenuItem updateActividad = new MenuItem(imageIcon, "Modificar Actividad", this.updateActividad());
+        MenuItem deleteActividad = new MenuItem(imageIcon, "Eliminar Actividad", this.updateActividad());
+        MenuItem mostrarActividaes = new MenuItem(imageIcon, "Mostrar Actividades", this.mostrarActividades());
         MenuItem menuActividades = new MenuItem(iconoActividades, "Actividades", null, createActividad, readActividad, updateActividad, deleteActividad, mostrarActividaes);
 /////////////////////////////////////////////////////////////////
 
