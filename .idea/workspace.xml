@@ -5,8 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a77f4ff1-961b-46d5-b8b8-e752317a3585" name="Changes" comment="todos los Action listeners, falta la llamada de estos">
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateActividad.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateAdopciones.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateAdopciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateAnimales.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateAnimales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateVeterinarios.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateVeterinarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelDeleteActividad.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelDeleteAdopciones.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelDeleteAdopciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelDeleteVeterinarios.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelDeleteVeterinarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarActividades.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarAdopciones.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarAdopciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarVeterinarios.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarVeterinarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadActividad.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadAdopciones.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadAdopciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadAnimales.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadAnimales.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadVeterinarios.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelReadVeterinarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelUpdateActividad.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelUpdateAdopciones.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelUpdateAdopciones.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelUpdateVeterinarios.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelUpdateVeterinarios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/visuals/principal/PantallaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/principal/PantallaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateActividad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelCreateActividad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarActividades.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/visuals/paneles/PanelMostrarActividades.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,23 +82,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "git-widget-placeholder": "Segundo-Branch",
-    "jdk.selected.JAVA_MODULE": "20",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Gestion-Refugio",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Segundo-Branch&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Gestion-Refugio&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Diego\Documents\GitHub\gestion-refugio\src\visuals\imagenes" />
