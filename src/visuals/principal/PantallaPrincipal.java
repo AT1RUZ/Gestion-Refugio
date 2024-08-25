@@ -42,16 +42,6 @@ public class PantallaPrincipal extends JFrame {
         addMenu(menuGestion, menuContratados, menuOtros);
 
 
-        //  create submenu staff
-//        MenuItem menuStaff1 = new MenuItem(iconSubMenu, "Staff 001", new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent ae) {
-//                panelBody.add(new Panel1());
-//                panelBody.repaint();
-//                panelBody.revalidate();
-//            }
-//        });
-
 
     }
 /////////////////////////////////// de actividad
