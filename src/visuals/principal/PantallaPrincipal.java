@@ -61,10 +61,42 @@ public class PantallaPrincipal extends JFrame {
         ImageIcon iconoTransporte = new ImageIcon("src/visuals/imagenes/transport.png");
         ImageIcon iconoProvincias = new ImageIcon("src/visuals/imagenes/provincias.png");
 
-        MenuItem menuAlimentos = new MenuItem(iconoAlimentos, "Alimentos", null);
-        MenuItem menuServicio = new MenuItem(iconoServicios, "Servicios", null);
-        MenuItem menuTransporte = new MenuItem(iconoTransporte,"Transporte",null);
-        MenuItem menuProvincias = new MenuItem(iconoProvincias, "Provincias",null);
+
+        ///////////////////crea icono a usar en los crud
+        ImageIcon imageIcon = new ImageIcon("src/visuals/imagenes/flecha.png");
+        //////////////////
+
+        ///////////
+        MenuItem createAlimentos = new MenuItem(imageIcon, "Añadir Alimentos", null);
+        MenuItem readAlimentos = new MenuItem(imageIcon, "Buscar Alimentos", null);
+        MenuItem updateAlimentos = new MenuItem(imageIcon, "Modificar Alimentos", null);
+        MenuItem deleteAlimentos = new MenuItem(imageIcon, "Eliminar Alimentos", null);
+        MenuItem mostrarAlimentos = new MenuItem(imageIcon, "Mostrar Alimentos", null);
+        MenuItem menuAlimentos = new MenuItem(iconoAlimentos, "Alimentos", null,createAlimentos,readAlimentos,updateAlimentos,deleteAlimentos,mostrarAlimentos);
+        ///////////
+
+        //////////
+        MenuItem createServicios = new MenuItem(imageIcon, "Añadir Servicios", null);
+        MenuItem readServicios = new MenuItem(imageIcon, "Buscar Servicios", null);
+        MenuItem updateServicios = new MenuItem(imageIcon, "Modificar Servicios", null);
+        MenuItem deleteServicios = new MenuItem(imageIcon, "Eliminar Servicios", null);
+        MenuItem mostrarServicios = new MenuItem(imageIcon, "Mostrar Servicios", null);
+        MenuItem menuServicio = new MenuItem(iconoServicios, "Servicios", null,createServicios,readServicios,updateServicios,deleteServicios,mostrarServicios);
+        //////////
+
+        ///////////
+        MenuItem createTransporte = new MenuItem(imageIcon, "Añadir Transporte", null);
+        MenuItem readTransporte = new MenuItem(imageIcon, "Buscar Transporte", null);
+        MenuItem updateTransporte = new MenuItem(imageIcon, "Modificar Transporte", null);
+        MenuItem deleteTransporte = new MenuItem(imageIcon, "Eliminar Transporte", null);
+        MenuItem mostrarTransporte = new MenuItem(imageIcon, "Mostrar Transporte", null);
+        MenuItem menuTransporte = new MenuItem(iconoTransporte,"Transporte",null,createTransporte,readTransporte,updateTransporte,deleteTransporte,mostrarTransporte);
+        ///////////
+
+        /////////////
+        MenuItem mostrarProvincias = new MenuItem(imageIcon, "Mostrar Provincias", null);
+        MenuItem menuProvincias = new MenuItem(iconoProvincias, "Provincias",null,mostrarProvincias);
+        //////////
 
         return new MenuItem(iconoOtros, "Otros", null, menuAlimentos, menuServicio, menuTransporte, menuProvincias);
     }
@@ -75,13 +107,40 @@ public class PantallaPrincipal extends JFrame {
         ImageIcon iconoProveedorAlimentos = new ImageIcon("src/visuals/imagenes/proveedor_alimentos.png");
         ImageIcon iconoMenuServiciosCOmplementarios = new ImageIcon("src/visuals/imagenes/proveedor_servicios_complementarios.png");
 
-        ///////////////////
+        ///////////////////crea icono a usar en los crud
         ImageIcon imageIcon = new ImageIcon("src/visuals/imagenes/flecha.png");
         //////////////////
 
-        MenuItem menuVeterinarios = new MenuItem(iconoVeterinarios, "Veterinarios", null);
-        MenuItem menuServiciosComplementarios = new MenuItem(iconoMenuServiciosCOmplementarios, "Servicios Complementarios", null);
-        MenuItem menuProveedorAlimentos = new MenuItem(iconoProveedorAlimentos, "Proveedor de Alimentos", null);
+        //////////////////crud veterinarios
+        MenuItem createVeterinarios = new MenuItem(imageIcon, "Añadir Veterinarios", null);
+        MenuItem readVeterinarios = new MenuItem(imageIcon, "Buscar Veterinarios", null);
+        MenuItem updateVeterinarios = new MenuItem(imageIcon, "Modificar Veterinarios", null);
+        MenuItem deleteVeterinarios = new MenuItem(imageIcon, "Eliminar Veterinarios", null);
+        MenuItem mostrarVeterinarios = new MenuItem(imageIcon, "Mostrar Veterinarios", null);
+        MenuItem menuVeterinarios = new MenuItem(iconoVeterinarios, "Veterinarios", null,createVeterinarios,readVeterinarios,updateVeterinarios,deleteVeterinarios,mostrarVeterinarios);
+        //////////
+
+        /////////////////crud s.compl
+        MenuItem createServiciosComplementarios = new MenuItem(imageIcon, "Añadir Servicios Complementarios", null);
+        MenuItem readServiciosComplementarios = new MenuItem(imageIcon, "Buscar Servicios Complementarios", null);
+        MenuItem updateServiciosComplementarios = new MenuItem(imageIcon, "Modificar Servicios Complementarios", null);
+        MenuItem deleteServiciosComplementarios = new MenuItem(imageIcon, "Eliminar Servicios Complementarios", null);
+        MenuItem mostrarServiciosComplementarios = new MenuItem(imageIcon, "Mostrar Servicios Complementarios", null);
+        MenuItem menuServiciosComplementarios = new MenuItem(iconoMenuServiciosCOmplementarios, "Servicios Complementarios", null,createServiciosComplementarios,readServiciosComplementarios,updateServiciosComplementarios,deleteServiciosComplementarios,mostrarServiciosComplementarios);
+        ///////
+
+        ////////////////crud proveedor
+        MenuItem createProveedorAlimentos = new MenuItem(imageIcon, "Añadir Proveedor de Alimentos", null);
+        MenuItem readProveedorAlimentos = new MenuItem(imageIcon, "Buscar Proveedor de Alimentos", null);
+        MenuItem updateProveedorAlimentos = new MenuItem(imageIcon, "Modificar Proveedor de Alimentos", null);
+        MenuItem deleteProveedorAlimentos = new MenuItem(imageIcon, "Eliminar Proveedor de Alimentos", null);
+        MenuItem mostrarProveedorAlimentos = new MenuItem(imageIcon, "Mostrar Proveedor de Alimentos", null);
+        MenuItem menuProveedorAlimentos = new MenuItem(iconoProveedorAlimentos, "Proveedor de Alimentos", null,createProveedorAlimentos,readProveedorAlimentos,updateProveedorAlimentos,deleteProveedorAlimentos,mostrarProveedorAlimentos);
+        ///////
+
+
+
+
         return new MenuItem(iconoContratado, "Contratados", null, menuVeterinarios, menuProveedorAlimentos, menuServiciosComplementarios);
     }
 
